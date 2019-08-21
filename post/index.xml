@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 我的学习博客</title>
+    <link>https://yslinwe.github.io/post/</link>
+    <description>Recent content in Posts on 我的学习博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 21 Aug 2019 15:03:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://yslinwe.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogtest</title>
+      <link>https://yslinwe.github.io/post/blogtest/</link>
+      <pubDate>Wed, 21 Aug 2019 15:03:24 +0800</pubDate>
+      
+      <guid>https://yslinwe.github.io/post/blogtest/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
