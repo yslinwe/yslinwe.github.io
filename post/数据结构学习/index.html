@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>第一个博客 - 我的学习博客</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="第一个博客" />
+<meta property="og:description" content="###数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C&#43;&#43;中stack的实现 ##顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 ##实现自动扩大数组大小 #模板类实现和声明要写在一起 templatevoid ChangeSize1D(T* &amp;a，const int oldSize, const int newSize) { if(newSize=0&rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a&#43;number,temp); delete[] a; a=temp; }
+##顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） ##实现回绕（利用数组删除后留下的空间） rear=front front&#43;&#43; 如果front=rear表示队列满了，要自动扩大数组大小
+###链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
+####树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 &#43; 链表的优点 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yslinwe.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/" />
+<meta property="article:published_time" content="2019-08-21T15:03:24+08:00" />
+<meta property="article:modified_time" content="2019-08-21T15:03:24+08:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="第一个博客"/>
+<meta name="twitter:description" content="###数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C&#43;&#43;中stack的实现 ##顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 ##实现自动扩大数组大小 #模板类实现和声明要写在一起 templatevoid ChangeSize1D(T* &amp;a，const int oldSize, const int newSize) { if(newSize=0&rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a&#43;number,temp); delete[] a; a=temp; }
+##顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） ##实现回绕（利用数组删除后留下的空间） rear=front front&#43;&#43; 如果front=rear表示队列满了，要自动扩大数组大小
+###链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
+####树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 &#43; 链表的优点 "/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="我的学习博客" rel="home">
+				<div class="logo__title">我的学习博客</div>
+				<div class="logo__tagline">努力学习，天天向上</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">第一个博客</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-21T15:03:24">2019年08月21日</time>
+</div>
+</div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">目录</div>
+	<div class="toc__menu">
+		
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>###数据结构笔记
+顺序栈和顺序队列使用动态数组实现
+以下不是C++中stack的实现
+##顺序栈
+特点：后进先出，先进后出
+栈可以用数组或者链表写
+开始时，栈顶Top=-1
+#顺序栈操作
+Push（栈顶添加元素）
+Top（返回当前栈顶数据）
+Pop （删除栈顶数据）
+IsEmpty（检查栈是否为空）
+#数组实现
+##实现自动扩大数组大小
+  #模板类实现和声明要写在一起
+template<class T>
+void ChangeSize1D(T* &amp;a，const int oldSize, const int newSize)
+{
+    if(newSize<0) throw "newSize must be >=0&rdquo;;
+    T* temp =new T[newSize];
+    int number = min(oldSize,newSize);
+    std::copy(a,a+number,temp);
+    delete[] a;
+    a=temp;
+}</p>
+
+<p>##顺序队列（Queue）
+特点：先进先出，后进后出
+#队列操作
+Push（队尾添加元素）
+Pop （队首删除元素）
+Front（返回当前队首数据）
+Rear（返回当前队尾数据）
+IsEmpty（检查队列是否为空）
+##实现回绕（利用数组删除后留下的空间）
+rear=front
+front++
+如果front=rear表示队列满了，要自动扩大数组大小</p>
+
+<p>###链表
+链表：1.数据域 2.链接域
+数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。
+链表可以弥补这些缺点。</p>
+
+<p>####树
+数组缺点：插入数据，数据要移动。
+数组优点：二分查找
+链表缺点：无法二分查找
+链表优点: 插入删除数据快
+树 = 数组的优点 + 链表的优点
+<img src="./image/树.jpg" alt="avatar" /></p>
+
+		</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Yank avatar" src="/img/1.jpg" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">关于 Yank</span>
+	</div>
+	<div class="authorbox__description">
+		成功是留给努力的人.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/c&#43;&#43;%E5%AD%A6%E4%B9%A0/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title"></p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title">剑指office（二）替换空格</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 我的学习博客.
+			<span class="footer__copyright-credits">基于 <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> 引擎和 <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>主題</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -12,12 +12,44 @@
     
     
     <item>
-      <title>第一个博客</title>
-      <link>https://yslinwe.github.io/post/blogtest/</link>
+      <title>剑指office（一）二维数组查找</title>
+      <link>https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%B8%80%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE/</link>
       <pubDate>Wed, 21 Aug 2019 15:03:24 +0800</pubDate>
       
-      <guid>https://yslinwe.github.io/post/blogtest/</guid>
-      <description>#Hello Wolrd</description>
+      <guid>https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%B8%80%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE/</guid>
+      <description>题目描述 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+//时间过长不能通过。 bool Find(int target, vector &amp;gt; array) { int col = 0, row = 0; row = array.size(); col = array[0].size(); int up = 0, down = row - 1; int right = col - 1, left = 0; while (left &amp;lt; col-1&amp;amp;&amp;amp;right &amp;gt; 0&amp;amp;&amp;amp;down+1 &amp;gt; 0&amp;amp;&amp;amp;up &amp;lt; row-1) { int left_temp = left; int rl_mid = (right + left) / 2; cout &amp;lt;&amp;lt; &amp;ldquo;rl_mid=&amp;rdquo; &amp;lt;&amp;lt; rl_mid &amp;lt;&amp;lt;&amp;rdquo; &amp;ldquo;&amp;lt;&amp;lt;&amp;ldquo;right=&amp;rdquo;&amp;lt;&amp;lt;right&amp;lt;&amp;lt;&amp;rdquo; &amp;ldquo;&amp;lt;&amp;lt;&amp;ldquo;left=&amp;rdquo;&amp;lt;&amp;lt; left&amp;lt;&amp;lt; endl; int rl_val = array[up][rl_mid]; if (target == rl_val) return true; else if (target &amp;lt; rl_val) right = rl_mid - 1; else left = rl_mid + 1;</description>
+    </item>
+    
+    <item>
+      <title>剑指office（二）替换空格</title>
+      <link>https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</link>
+      <pubDate>Wed, 21 Aug 2019 15:03:24 +0800</pubDate>
+      
+      <guid>https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</guid>
+      <description>题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件： #include #include #include
+void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &amp;lt; length; i++) { if (str[i] == &amp;lsquo; &amp;lsquo;) count++; } int new_length = length + 2 * count; int j = length-1; for (int i = new_length-1; i &amp;gt;= 0;) { if (str[j] == &amp;lsquo; &amp;lsquo;) { str[i&amp;ndash;] = &amp;lsquo;0&amp;rsquo;; str[i&amp;ndash;] = &amp;lsquo;2&amp;rsquo;; str[i&amp;ndash;] = &amp;lsquo;%&amp;rsquo;; } else { str[i&amp;ndash;] = str[j]; } j&amp;ndash;; } }</description>
+    </item>
+    
+    <item>
+      <title>第一个博客</title>
+      <link>https://yslinwe.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Wed, 21 Aug 2019 15:03:24 +0800</pubDate>
+      
+      <guid>https://yslinwe.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
+      <description>###数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C++中stack的实现 ##顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 ##实现自动扩大数组大小 #模板类实现和声明要写在一起 templatevoid ChangeSize1D(T* &amp;amp;a，const int oldSize, const int newSize) { if(newSize=0&amp;rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a+number,temp); delete[] a; a=temp; }
+##顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） ##实现回绕（利用数组删除后留下的空间） rear=front front++ 如果front=rear表示队列满了，要自动扩大数组大小
+###链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
+####树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 + 链表的优点 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yslinwe.github.io/post/c&#43;&#43;%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yslinwe.github.io/post/c&#43;&#43;%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
     </item>
     
   </channel>

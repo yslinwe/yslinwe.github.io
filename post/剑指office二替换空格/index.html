@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>剑指office（二）替换空格 - 我的学习博客</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="剑指office（二）替换空格" />
+<meta property="og:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件： #include #include #include
+void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &lsquo; &lsquo;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &lsquo; &lsquo;) { str[i&ndash;] = &lsquo;0&rsquo;; str[i&ndash;] = &lsquo;2&rsquo;; str[i&ndash;] = &lsquo;%&rsquo;; } else { str[i&ndash;] = str[j]; } j&ndash;; } }" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/" />
+<meta property="article:published_time" content="2019-08-21T15:03:24+08:00" />
+<meta property="article:modified_time" content="2019-08-21T15:03:24+08:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="剑指office（二）替换空格"/>
+<meta name="twitter:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件： #include #include #include
+void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &lsquo; &lsquo;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &lsquo; &lsquo;) { str[i&ndash;] = &lsquo;0&rsquo;; str[i&ndash;] = &lsquo;2&rsquo;; str[i&ndash;] = &lsquo;%&rsquo;; } else { str[i&ndash;] = str[j]; } j&ndash;; } }"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="我的学习博客" rel="home">
+				<div class="logo__title">我的学习博客</div>
+				<div class="logo__tagline">努力学习，天天向上</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">剑指office（二）替换空格</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-21T15:03:24">2019年08月21日</time>
+</div>
+</div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">目录</div>
+	<div class="toc__menu">
+		
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>题目描述
+请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
+需要头文件：
+#include<iostream>
+#include<stdlib.h>
+#include<string></p>
+
+<p>void replaceSpace(char* str, int length) {
+    int count = 0;
+    for (int i = 0; i &lt; length; i++)
+    {
+        if (str[i] == &lsquo; &lsquo;)
+            count++;
+    }
+    int new_length = length + 2 * count;
+    int j = length-1;
+    for (int i = new_length-1; i &gt;= 0;)
+    {
+        if (str[j] == &lsquo; &lsquo;)
+        {
+            str[i&ndash;] = &lsquo;0&rsquo;;
+            str[i&ndash;] = &lsquo;2&rsquo;;
+            str[i&ndash;] = &lsquo;%&rsquo;;
+        }
+        else
+        {
+            str[i&ndash;] = str[j];
+        }
+        j&ndash;;
+    }
+}</p>
+
+<pre><code>void replaceSpace2(char* str, int length) {
+    int i = 0;
+    int numSpace = 0;
+    while (str[i] != '\0')
+    {
+        if (str[i] == ' ')
+            numSpace++;
+        ++i;
+    }
+    int newLen = i + numSpace * 2;
+    if (newLen &gt; length)
+        return;
+    for (int j = i; j &gt;= 0, newLen &gt;= 0;)
+    {
+        if (str[j] == ' ')
+        {
+            str[newLen--] = '0';
+            str[newLen--] = '2';
+            str[newLen--] = '%';
+        }
+        else
+            str[newLen--] = str[j];
+        j--;
+    }
+}
+</code></pre>
+
+<p>#pragma warning(disable:4996)
+    void replaceSpace3(char* str, int length)
+    {
+        string s = str;
+        for (int i = 0; i &lt; s.size(); ++i) {
+            if (s[i] == &lsquo; &lsquo;) {
+                s.replace(i, 2, &ldquo;%20&rdquo;);
+            }
+        }
+        str = new char[s.size()];
+        strcpy(str,s.c_str());
+        cout &lt;&lt; str;
+    }</p>
+
+		</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Yank avatar" src="/img/1.jpg" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">关于 Yank</span>
+	</div>
+	<div class="authorbox__description">
+		成功是留给努力的人.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title">第一个博客</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/%E5%89%91%E6%8C%87office%E4%B8%80%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title">剑指office（一）二维数组查找</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 我的学习博客.
+			<span class="footer__copyright-credits">基于 <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> 引擎和 <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>主題</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
