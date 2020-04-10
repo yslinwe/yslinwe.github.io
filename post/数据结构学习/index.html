@@ -8,10 +8,11 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="第一个博客" />
-<meta property="og:description" content="###数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C&#43;&#43;中stack的实现 ##顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 ##实现自动扩大数组大小 #模板类实现和声明要写在一起 templatevoid ChangeSize1D(T* &amp;a，const int oldSize, const int newSize) { if(newSize=0&rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a&#43;number,temp); delete[] a; a=temp; }
-##顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） ##实现回绕（利用数组删除后留下的空间） rear=front front&#43;&#43; 如果front=rear表示队列满了，要自动扩大数组大小
-###链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
-####树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 &#43; 链表的优点 " />
+<meta property="og:description" content="#数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C&#43;&#43;中stack的实现 #顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 #实现自动扩大数组大小 #模板类实现和声明要写在一起
+templatevoid ChangeSize1D(T* &amp;a，const int oldSize, const int newSize) { if(newSize=0&rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a&#43;number,temp); delete[] a; a=temp; }
+#顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） #实现回绕（利用数组删除后留下的空间） rear=front front&#43;&#43; 如果front=rear表示队列满了，要自动扩大数组大小
+#链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
+#树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 &#43; 链表的优点 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yslinwe.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/" />
 <meta property="article:published_time" content="2019-08-21T15:03:24+08:00" />
@@ -19,10 +20,11 @@
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="第一个博客"/>
-<meta name="twitter:description" content="###数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C&#43;&#43;中stack的实现 ##顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 ##实现自动扩大数组大小 #模板类实现和声明要写在一起 templatevoid ChangeSize1D(T* &amp;a，const int oldSize, const int newSize) { if(newSize=0&rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a&#43;number,temp); delete[] a; a=temp; }
-##顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） ##实现回绕（利用数组删除后留下的空间） rear=front front&#43;&#43; 如果front=rear表示队列满了，要自动扩大数组大小
-###链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
-####树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 &#43; 链表的优点 "/>
+<meta name="twitter:description" content="#数据结构笔记 顺序栈和顺序队列使用动态数组实现 以下不是C&#43;&#43;中stack的实现 #顺序栈 特点：后进先出，先进后出 栈可以用数组或者链表写 开始时，栈顶Top=-1 #顺序栈操作 Push（栈顶添加元素） Top（返回当前栈顶数据） Pop （删除栈顶数据） IsEmpty（检查栈是否为空） #数组实现 #实现自动扩大数组大小 #模板类实现和声明要写在一起
+templatevoid ChangeSize1D(T* &amp;a，const int oldSize, const int newSize) { if(newSize=0&rdquo;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a&#43;number,temp); delete[] a; a=temp; }
+#顺序队列（Queue） 特点：先进先出，后进后出 #队列操作 Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空） #实现回绕（利用数组删除后留下的空间） rear=front front&#43;&#43; 如果front=rear表示队列满了，要自动扩大数组大小
+#链表 链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。
+#树 数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 &#43; 链表的优点 "/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -66,10 +68,10 @@
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<p>###数据结构笔记
+			<p>#数据结构笔记
 顺序栈和顺序队列使用动态数组实现
 以下不是C++中stack的实现
-##顺序栈
+#顺序栈
 特点：后进先出，先进后出
 栈可以用数组或者链表写
 开始时，栈顶Top=-1
@@ -79,20 +81,21 @@ Top（返回当前栈顶数据）
 Pop （删除栈顶数据）
 IsEmpty（检查栈是否为空）
 #数组实现
-##实现自动扩大数组大小
-  #模板类实现和声明要写在一起
-template<class T>
-void ChangeSize1D(T* &amp;a，const int oldSize, const int newSize)
-{
-    if(newSize<0) throw "newSize must be >=0&rdquo;;
-    T* temp =new T[newSize];
-    int number = min(oldSize,newSize);
-    std::copy(a,a+number,temp);
-    delete[] a;
-    a=temp;
-}</p>
+#实现自动扩大数组大小
+  #模板类实现和声明要写在一起</p>
 
-<p>##顺序队列（Queue）
+<p>template<class T>
+  void ChangeSize1D(T* &amp;a，const int oldSize, const int newSize)
+  {
+      if(newSize<0) throw "newSize must be >=0&rdquo;;
+      T* temp =new T[newSize];
+      int number = min(oldSize,newSize);
+      std::copy(a,a+number,temp);
+      delete[] a;
+      a=temp;
+  }</p>
+
+<p>#顺序队列（Queue）
 特点：先进先出，后进后出
 #队列操作
 Push（队尾添加元素）
@@ -100,17 +103,17 @@ Pop （队首删除元素）
 Front（返回当前队首数据）
 Rear（返回当前队尾数据）
 IsEmpty（检查队列是否为空）
-##实现回绕（利用数组删除后留下的空间）
+#实现回绕（利用数组删除后留下的空间）
 rear=front
 front++
 如果front=rear表示队列满了，要自动扩大数组大小</p>
 
-<p>###链表
+<p>#链表
 链表：1.数据域 2.链接域
 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。
 链表可以弥补这些缺点。</p>
 
-<p>####树
+<p>#树
 数组缺点：插入数据，数据要移动。
 数组优点：二分查找
 链表缺点：无法二分查找

@@ -8,8 +8,8 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="剑指office（二）替换空格" />
-<meta property="og:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件： #include #include #include
-void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &lsquo; &lsquo;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &lsquo; &lsquo;) { str[i&ndash;] = &lsquo;0&rsquo;; str[i&ndash;] = &lsquo;2&rsquo;; str[i&ndash;] = &lsquo;%&rsquo;; } else { str[i&ndash;] = str[j]; } j&ndash;; } }" />
+<meta property="og:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件：
+#include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &#39; &#39;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/" />
 <meta property="article:published_time" content="2019-08-21T15:03:24+08:00" />
@@ -17,8 +17,8 @@ void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt;
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="剑指office（二）替换空格"/>
-<meta name="twitter:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件： #include #include #include
-void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &lsquo; &lsquo;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &lsquo; &lsquo;) { str[i&ndash;] = &lsquo;0&rsquo;; str[i&ndash;] = &lsquo;2&rsquo;; str[i&ndash;] = &lsquo;%&rsquo;; } else { str[i&ndash;] = str[j]; } j&ndash;; } }"/>
+<meta name="twitter:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件：
+#include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &#39; &#39;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -64,37 +64,38 @@ void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt;
 <div class="content post__content clearfix">
 			<p>题目描述
 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
-需要头文件：
-#include<iostream>
-#include<stdlib.h>
-#include<string></p>
+需要头文件：</p>
 
-<p>void replaceSpace(char* str, int length) {
+<pre><code>#include&lt;iostream&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;string&gt;
+
+void replaceSpace(char* str, int length) {
     int count = 0;
     for (int i = 0; i &lt; length; i++)
     {
-        if (str[i] == &lsquo; &lsquo;)
+        if (str[i] == ' ')
             count++;
     }
     int new_length = length + 2 * count;
     int j = length-1;
     for (int i = new_length-1; i &gt;= 0;)
     {
-        if (str[j] == &lsquo; &lsquo;)
+        if (str[j] == ' ')
         {
-            str[i&ndash;] = &lsquo;0&rsquo;;
-            str[i&ndash;] = &lsquo;2&rsquo;;
-            str[i&ndash;] = &lsquo;%&rsquo;;
+            str[i--] = '0';
+            str[i--] = '2';
+            str[i--] = '%';
         }
         else
         {
-            str[i&ndash;] = str[j];
+            str[i--] = str[j];
         }
-        j&ndash;;
+        j--;
     }
-}</p>
+}
 
-<pre><code>void replaceSpace2(char* str, int length) {
+void replaceSpace2(char* str, int length) {
     int i = 0;
     int numSpace = 0;
     while (str[i] != '\0')
