@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> - 我的学习博客</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="" />
+<meta property="og:description" content="#上传文件 pscp -r newlivedowload root@139.9.116.41:live_download nethogs eth0 ls -lh df -l ps -aux|grep get.py| grep -v grep nohup 运行文件&gt;&gt; output.log 2&gt;&amp;1 &amp; nohup python3 -u main.py &gt; test.out 2&gt;&amp;1 &amp;
+#限制网速 git clone https://github.com/magnific0/wondershaper.git 在确定网卡名称以后，就可以按照以下的命令限制网络带宽：
+$ sudo wondershaper -a  -d  -u  例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：
+$ sudo wondershaper -a eth0 -d 1024 -u 512 其中参数的含义是：
+-a：网卡名称 -d：下行带宽 -u：上行带宽 如果要对网卡解除网络带宽的限制，只需要执行： ./wondershaper -a eth0 -c
+#后台运行" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yslinwe.github.io/post/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8/" />
+
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="#上传文件 pscp -r newlivedowload root@139.9.116.41:live_download nethogs eth0 ls -lh df -l ps -aux|grep get.py| grep -v grep nohup 运行文件&gt;&gt; output.log 2&gt;&amp;1 &amp; nohup python3 -u main.py &gt; test.out 2&gt;&amp;1 &amp;
+#限制网速 git clone https://github.com/magnific0/wondershaper.git 在确定网卡名称以后，就可以按照以下的命令限制网络带宽：
+$ sudo wondershaper -a  -d  -u  例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：
+$ sudo wondershaper -a eth0 -d 1024 -u 512 其中参数的含义是：
+-a：网卡名称 -d：下行带宽 -u：上行带宽 如果要对网卡解除网络带宽的限制，只需要执行： ./wondershaper -a eth0 -c
+#后台运行"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="我的学习博客" rel="home">
+				<div class="logo__title">我的学习博客</div>
+				<div class="logo__tagline">努力学习，天天向上</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title"></h1>
+			
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">目录</div>
+	<div class="toc__menu">
+		
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>#上传文件
+pscp -r newlivedowload root@139.9.116.41:live_download
+nethogs eth0
+ls -lh
+df -l
+ps -aux|grep get.py| grep -v grep
+nohup 运行文件&gt;&gt; output.log 2&gt;&amp;1 &amp;
+nohup python3 -u main.py &gt; test.out 2&gt;&amp;1 &amp;</p>
+
+<p>#限制网速
+git clone  <a href="https://github.com/magnific0/wondershaper.git">https://github.com/magnific0/wondershaper.git</a>
+在确定网卡名称以后，就可以按照以下的命令限制网络带宽：</p>
+
+<p>$ sudo wondershaper -a <adapter> -d <rate> -u <rate>
+例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：</p>
+
+<p>$ sudo wondershaper -a eth0 -d 1024 -u 512
+其中参数的含义是：</p>
+
+<p>-a：网卡名称
+-d：下行带宽
+-u：上行带宽
+如果要对网卡解除网络带宽的限制，只需要执行：
+./wondershaper -a eth0 -c</p>
+
+<p>#后台运行</p>
+
+<p>可以先执行：screen -S zgy ，screen就会创建一个名字为zgy的会话。
+运行代码
+当需要临时离开时（会话中的程序不会关闭，仍在运行）可以用快捷键Ctrl+a d(即按住Ctrl，依次再按a,d)
+当回来时可以再执行执行：screen -r zgy 即可恢复到离开前创建的zgy会话的工作界面。
+screen -ls screen会列出当前存在的会话列表
+恢复会话：
+screen -r zgy或screen -r pid
+退出会话
+执行：exit ，会提示：[screen is terminating]，表示已经成功退出screen会话。
+常用快捷键
+kill 掉一个窗口
+screen -X -S 4588 quit
+Ctrl+a c ：在当前screen会话中创建窗口</p>
+
+<p>Ctrl+a w ：窗口列表</p>
+
+<p>Ctrl+a n ：下一个窗口</p>
+
+<p>Ctrl+a p ：上一个窗口
+./configure &ndash;with-http_ssl_module &ndash;prefix=/root/nginx &ndash;with-pcre=../pcre-8.42 &ndash;with-openssl=../openssl-1.1.0g &ndash;add-module=../nginx-rtmp-module</p>
+
+<p>Ctrl+a 0-9 ：在第0个窗口和第9个窗口之间切换</p>
+
+		</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Yank avatar" src="/img/1.jpg" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">关于 Yank</span>
+	</div>
+	<div class="authorbox__description">
+		成功是留给努力的人.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/c&#43;&#43;%E5%AD%A6%E4%B9%A0/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title"></p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 我的学习博客.
+			<span class="footer__copyright-credits">基于 <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> 引擎和 <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>主題</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
