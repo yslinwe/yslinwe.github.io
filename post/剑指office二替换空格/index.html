@@ -120,21 +120,21 @@ void replaceSpace2(char* str, int length) {
         j--;
     }
 }
-</code></pre>
 
-<p>#pragma warning(disable:4996)
-    void replaceSpace3(char* str, int length)
-    {
-        string s = str;
-        for (int i = 0; i &lt; s.size(); ++i) {
-            if (s[i] == &lsquo; &lsquo;) {
-                s.replace(i, 2, &ldquo;%20&rdquo;);
-            }
+#pragma warning(disable:4996)
+void replaceSpace3(char* str, int length)
+{
+    string s = str;
+    for (int i = 0; i &lt; s.size(); ++i) {
+        if (s[i] == ' ') {
+            s.replace(i, 2, &quot;%20&quot;);
         }
-        str = new char[s.size()];
-        strcpy(str,s.c_str());
-        cout &lt;&lt; str;
-    }</p>
+    }
+    str = new char[s.size()];
+    strcpy(str,s.c_str());
+    cout &lt;&lt; str;
+}
+</code></pre>
 
 		</div>
 	</article>

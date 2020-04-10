@@ -9,7 +9,8 @@
 	<meta name="description" content="">
 	<meta property="og:title" content="剑指office（一）二维数组查找" />
 <meta property="og:description" content="题目描述 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
-//时间过长不能通过。 bool Find(int target, vector &gt; array) { int col = 0, row = 0; row = array.size(); col = array[0].size(); int up = 0, down = row - 1; int right = col - 1, left = 0; while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down&#43;1 &gt; 0&amp;&amp;up &lt; row-1) { int left_temp = left; int rl_mid = (right &#43; left) / 2; cout &lt;&lt; &ldquo;rl_mid=&rdquo; &lt;&lt; rl_mid &lt;&lt;&rdquo; &ldquo;&lt;&lt;&ldquo;right=&rdquo;&lt;&lt;right&lt;&lt;&rdquo; &ldquo;&lt;&lt;&ldquo;left=&rdquo;&lt;&lt; left&lt;&lt; endl; int rl_val = array[up][rl_mid]; if (target == rl_val) return true; else if (target &lt; rl_val) right = rl_mid - 1; else left = rl_mid &#43; 1;" />
+//时间过长不能通过。
+bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) { int col = 0, row = 0; row = array.size(); col = array[0].size(); int up = 0, down = row - 1; int right = col - 1, left = 0; while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down&#43;1 &gt; 0&amp;&amp;up &lt; row-1) { int left_temp = left; int rl_mid = (right &#43; left) / 2; cout &lt;&lt; &quot;rl_mid=&quot; &lt;&lt; rl_mid &lt;&lt;&quot; &quot;&lt;&lt;&quot;right=&quot;&lt;&lt;right&lt;&lt;&quot; &quot;&lt;&lt;&quot;left=&quot;&lt;&lt; left&lt;&lt; endl; int rl_val = array[up][rl_mid]; if (target == rl_val) return true; else if (target &lt; rl_val) right = rl_mid - 1; else left = rl_mid &#43; 1; int ud_mid = (up &#43; down) / 2; cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl; int ud_val = array[ud_mid][left_temp]; if (target == ud_val) return true; else if (target &lt; ud_val) down = ud_mid - 1; else up = ud_mid &#43; 1; } return false; } bool Find2(int target, vector&lt;vector&lt;int&gt; &gt; array) { int rows = array." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%B8%80%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE/" />
 <meta property="article:published_time" content="2019-08-21T15:03:24+08:00" />
@@ -18,7 +19,8 @@
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="剑指office（一）二维数组查找"/>
 <meta name="twitter:description" content="题目描述 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
-//时间过长不能通过。 bool Find(int target, vector &gt; array) { int col = 0, row = 0; row = array.size(); col = array[0].size(); int up = 0, down = row - 1; int right = col - 1, left = 0; while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down&#43;1 &gt; 0&amp;&amp;up &lt; row-1) { int left_temp = left; int rl_mid = (right &#43; left) / 2; cout &lt;&lt; &ldquo;rl_mid=&rdquo; &lt;&lt; rl_mid &lt;&lt;&rdquo; &ldquo;&lt;&lt;&ldquo;right=&rdquo;&lt;&lt;right&lt;&lt;&rdquo; &ldquo;&lt;&lt;&ldquo;left=&rdquo;&lt;&lt; left&lt;&lt; endl; int rl_val = array[up][rl_mid]; if (target == rl_val) return true; else if (target &lt; rl_val) right = rl_mid - 1; else left = rl_mid &#43; 1;"/>
+//时间过长不能通过。
+bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) { int col = 0, row = 0; row = array.size(); col = array[0].size(); int up = 0, down = row - 1; int right = col - 1, left = 0; while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down&#43;1 &gt; 0&amp;&amp;up &lt; row-1) { int left_temp = left; int rl_mid = (right &#43; left) / 2; cout &lt;&lt; &quot;rl_mid=&quot; &lt;&lt; rl_mid &lt;&lt;&quot; &quot;&lt;&lt;&quot;right=&quot;&lt;&lt;right&lt;&lt;&quot; &quot;&lt;&lt;&quot;left=&quot;&lt;&lt; left&lt;&lt; endl; int rl_val = array[up][rl_mid]; if (target == rl_val) return true; else if (target &lt; rl_val) right = rl_mid - 1; else left = rl_mid &#43; 1; int ud_mid = (up &#43; down) / 2; cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl; int ud_val = array[ud_mid][left_temp]; if (target == ud_val) return true; else if (target &lt; ud_val) down = ud_mid - 1; else up = ud_mid &#43; 1; } return false; } bool Find2(int target, vector&lt;vector&lt;int&gt; &gt; array) { int rows = array."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -65,8 +67,9 @@
 			<p>题目描述
 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
 
-<p>//时间过长不能通过。
-bool Find(int target, vector<vector<int> &gt; array) {
+<p>//时间过长不能通过。</p>
+
+<pre><code>bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) {
     int col = 0, row = 0;
     row = array.size();
     col = array[0].size();
@@ -76,29 +79,27 @@ bool Find(int target, vector<vector<int> &gt; array) {
     {
         int left_temp = left;
         int rl_mid = (right + left) / 2;
-        cout &lt;&lt; &ldquo;rl_mid=&rdquo; &lt;&lt; rl_mid &lt;&lt;&rdquo; &ldquo;&lt;&lt;&ldquo;right=&rdquo;&lt;&lt;right&lt;&lt;&rdquo; &ldquo;&lt;&lt;&ldquo;left=&rdquo;&lt;&lt; left&lt;&lt; endl;
+        cout &lt;&lt; &quot;rl_mid=&quot; &lt;&lt; rl_mid &lt;&lt;&quot; &quot;&lt;&lt;&quot;right=&quot;&lt;&lt;right&lt;&lt;&quot; &quot;&lt;&lt;&quot;left=&quot;&lt;&lt; left&lt;&lt; endl;
         int rl_val = array[up][rl_mid];
         if (target == rl_val)
             return true;
         else if (target &lt; rl_val)
             right = rl_mid - 1;
-        else left = rl_mid + 1;</p>
+        else left = rl_mid + 1;
 
-<pre><code>    int ud_mid = (up + down) / 2;
-    cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl;
-    int ud_val = array[ud_mid][left_temp];
-    if (target == ud_val)
-        return true;
-    else if (target &lt; ud_val)
-        down = ud_mid - 1;
-    else up = ud_mid + 1;
+        int ud_mid = (up + down) / 2;
+        cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl;
+        int ud_val = array[ud_mid][left_temp];
+        if (target == ud_val)
+            return true;
+        else if (target &lt; ud_val)
+            down = ud_mid - 1;
+        else up = ud_mid + 1;
+    }
+    return false;
 }
-return false;
-</code></pre>
 
-<p>}</p>
-
-<p>bool Find2(int target, vector<vector<int> &gt; array) {
+bool Find2(int target, vector&lt;vector&lt;int&gt; &gt; array) {
     int rows = array.size();
     int cols = array[0].size();
     if (!array.empty() &amp;&amp; rows &gt; 0 &amp;&amp; cols &gt; 0) {
@@ -109,7 +110,7 @@ return false;
                 return true;
             }
             else if (array[row][col] &gt; target) {
-                &ndash;col;
+                --col;
             }
             else {
                 ++row;
@@ -117,9 +118,9 @@ return false;
         }
     }
     return false;
-}</p>
+}
 
-<p>bool Find3(int target, vector<vector<int> &gt; array)
+bool Find3(int target, vector&lt;vector&lt;int&gt; &gt; array)
 {
     int rows = array.size();
     int cols = array[0].size();
@@ -131,10 +132,11 @@ return false;
                 return true;
             else if (array[row][col] &lt; target)
                 row++;
-            else col&ndash;;
+            else col--;
         }
         return false;
-}</p>
+}
+</code></pre>
 
 		</div>
 	</article>
