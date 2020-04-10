@@ -62,8 +62,8 @@
 	<div class="content list__excerpt post__content clearfix">
 		#上传文件 pscp -r newlivedowload root@139.9.116.41:live_download nethogs eth0 ls -lh df -l ps -aux|grep get.py| grep -v grep nohup 运行文件&gt;&gt; output.log 2&gt;&amp;1 &amp; nohup python3 -u main.py &gt; test.out 2&gt;&amp;1 &amp;
 #限制网速 git clone https://github.com/magnific0/wondershaper.git 在确定网卡名称以后，就可以按照以下的命令限制网络带宽：
-$ sudo wondershaper -a  -d  -u  例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：
-$ sudo wondershaper -a eth0 -d 1024 -u 512 其中参数的含义是：
+sudo wondershaper -a &lt;adapter&gt; -d &lt;rate&gt; -u &lt;rate&gt;  例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：
+sudo wondershaper -a eth0 -d 1024 -u 512  其中参数的含义是：
 -a：网卡名称 -d：下行带宽 -u：上行带宽 如果要对网卡解除网络带宽的限制，只需要执行： ./wondershaper -a eth0 -c
 #后台运行
 	</div>
@@ -101,8 +101,8 @@ bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) { int col = 0, row
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy 需要头文件：
-#include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i++) { if (str[i] == ' ') count++; } int new_length = length + 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == ' ') { str[i--] = '0'; str[i--] = '2'; str[i--] = '%'; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !
+		#题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
+//需要头文件： #include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i++) { if (str[i] == ' ') count++; } int new_length = length + 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == ' ') { str[i--] = '0'; str[i--] = '2'; str[i--] = '%'; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
