@@ -6,10 +6,24 @@
     <description>Recent content on 我的学习博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2020 20:37:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 18:50:45 +0800</lastBuildDate>
     
 	<atom:link href="https://yslinwe.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OneDriveUploader使用</title>
+      <link>https://yslinwe.github.io/post/one/</link>
+      <pubDate>Sat, 11 Apr 2020 18:50:45 +0800</pubDate>
+      
+      <guid>https://yslinwe.github.io/post/one/</guid>
+      <description>将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &amp;ldquo;mm00.jpg&amp;rdquo;
+将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &amp;ldquo;mm00.jpg&amp;rdquo; -n &amp;ldquo;mm01.jpg&amp;rdquo;
+将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &amp;ldquo;Download&amp;rdquo;
+将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &amp;ldquo;Download&amp;rdquo; -r &amp;ldquo;Test&amp;rdquo;
+将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &amp;ldquo;Download&amp;rdquo; -r &amp;ldquo;Test&amp;rdquo;
+将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &amp;ldquo;Download&amp;rdquo; -r &amp;ldquo;Test&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>Github高级搜索</title>
