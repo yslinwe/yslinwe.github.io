@@ -8,12 +8,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="OneDriveUploader使用" />
-<meta property="og:description" content="将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &ldquo;mm00.jpg&rdquo;
-将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &ldquo;mm00.jpg&rdquo; -n &ldquo;mm01.jpg&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &ldquo;Download&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;" />
+<meta property="og:description" content="#### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &#34;mm00.jpg&#34; #### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &#34;mm00.jpg&#34; -n &#34;mm01.jpg&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &#34;Download&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &#34;Download&#34; -r &#34;Test&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &#34;Download&#34; -r &#34;Test&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &#34;Download&#34; -r &#34;Test&#34; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yslinwe.github.io/post/one/" />
 <meta property="article:published_time" content="2020-04-11T18:50:45+08:00" />
@@ -21,12 +16,7 @@
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="OneDriveUploader使用"/>
-<meta name="twitter:description" content="将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &ldquo;mm00.jpg&rdquo;
-将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &ldquo;mm00.jpg&rdquo; -n &ldquo;mm01.jpg&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &ldquo;Download&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;
-将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;"/>
+<meta name="twitter:description" content="#### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &#34;mm00.jpg&#34; #### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &#34;mm00.jpg&#34; -n &#34;mm01.jpg&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &#34;Download&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &#34;Download&#34; -r &#34;Test&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &#34;Download&#34; -r &#34;Test&#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &#34;Download&#34; -r &#34;Test&#34; "/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -70,19 +60,31 @@
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<h1 id="将同目录下的-mm00jpg-文件上传到-onedrive-网盘根目录">将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录</h1>
-<p>OneDriveUploader -s &ldquo;mm00.jpg&rdquo;</p>
-<h1 id="将同目录下的-mm00jpg-文件上传到-onedrive-网盘根目录并改名为-mm01jpg">将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg</h1>
-<p>OneDriveUploader -s &ldquo;mm00.jpg&rdquo; -n &ldquo;mm01.jpg&rdquo;</p>
-<h1 id="将同目录下的-download-文件夹上传到-onedrive-网盘根目录">将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录</h1>
-<p>OneDriveUploader -s &ldquo;Download&rdquo;</p>
-<h1 id="将同目录下的-download-文件夹上传到-onedrive-网盘test目录中">将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中</h1>
-<p>OneDriveUploader -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;</p>
-<h1 id="将同目录下的-download-文件夹上传到-onedrive-网盘test目录中-使用-10-线程">将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程</h1>
-<p>OneDriveUploader -t 10 -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;</p>
-<h1 id="将同目录下的-download-文件夹上传到-onedrive-网盘test目录中-使用-15-线程-并设置分块大小为-20m">将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M</h1>
-<p>OneDriveUploader -t 15 -b 20 -s &ldquo;Download&rdquo; -r &ldquo;Test&rdquo;</p>
+			<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录</span>
 
+OneDriveUploader -s <span style="color:#e6db74">&#34;mm00.jpg&#34;</span>
+
+<span style="color:#75715e">#### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg</span>
+
+OneDriveUploader -s <span style="color:#e6db74">&#34;mm00.jpg&#34;</span> -n <span style="color:#e6db74">&#34;mm01.jpg&#34;</span>
+
+<span style="color:#75715e">#### 将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录</span>
+
+OneDriveUploader -s <span style="color:#e6db74">&#34;Download&#34;</span> 
+
+<span style="color:#75715e">#### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中</span>
+
+OneDriveUploader -s <span style="color:#e6db74">&#34;Download&#34;</span> -r <span style="color:#e6db74">&#34;Test&#34;</span>
+
+<span style="color:#75715e">#### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程</span>
+
+OneDriveUploader -t <span style="color:#ae81ff">10</span> -s <span style="color:#e6db74">&#34;Download&#34;</span> -r <span style="color:#e6db74">&#34;Test&#34;</span>
+
+<span style="color:#75715e">#### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M</span>
+
+OneDriveUploader -t <span style="color:#ae81ff">15</span> -b <span style="color:#ae81ff">20</span> -s <span style="color:#e6db74">&#34;Download&#34;</span> -r <span style="color:#e6db74">&#34;Test&#34;</span>
+
+</code></pre></div>
 		</div>
 	</article>
 </main>
@@ -102,6 +104,9 @@
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
 		<a class="post-nav__link" href="/post/github%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2/" rel="prev"><span class="post-nav__caption">«&thinsp;上一篇</span><p class="post-nav__post-title">Github高级搜索</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/mac%E4%B8%8A%E6%98%BE%E7%A4%BA%E5%92%8C%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/" rel="next"><span class="post-nav__caption">下一篇&thinsp;»</span><p class="post-nav__post-title">Mac上显示和隐藏文件</p></a>
 	</div>
 </nav>
 
