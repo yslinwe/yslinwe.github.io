@@ -144,13 +144,55 @@ defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finde
 //时间过长不能通过。
 bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) {int col = 0, row = 0;row = array.size();col = array[0].size();int up = 0, down = row - 1;int right = col - 1, left = 0;while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down+1 &gt; 0&amp;&amp;up &lt; row-1){int left_temp = left;int rl_mid = (right + left) / 2;cout &lt;&lt; &quot;rl_mid=&quot; &lt;&lt; rl_mid &lt;&lt;&quot; &quot;&lt;&lt;&quot;right=&quot;&lt;&lt;right&lt;&lt;&quot; &quot;&lt;&lt;&quot;left=&quot;&lt;&lt; left&lt;&lt; endl;int rl_val = array[up][rl_mid];if (target == rl_val)return true;else if (target &lt; rl_val)right = rl_mid - 1;else left = rl_mid + 1;int ud_mid = (up + down) / 2;cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl;int ud_val = array[ud_mid][left_temp];if (target == ud_val)return true;else if (target &lt; ud_val)down = ud_mid - 1;else up = ud_mid + 1;}return false;}bool Find2(int target, vector&lt;vector&lt;int&gt; &gt; array) {int rows = array.
 	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/" rel="bookmark">
+			剑指office（二）替换空格
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-21T15:03:24">2019年08月21日</time>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
+方法1 //需要头文件： 	#include&lt;iostream&gt;	#include&lt;stdlib.h&gt;	#include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i++) { if (str[i] == &#39; &#39;) count++; } int new_length = length + 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } 方法2 void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/" rel="bookmark">
+			数据结构学习
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-21T15:03:24">2019年08月21日</time>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		数据结构笔记 顺序栈和顺序队列使用动态数组实现以下不是C++中stack的实现顺序栈 特点：后进先出，先进后出栈可以用数组或者链表写开始时，栈顶Top=-1顺序栈操作 Push（栈顶添加元素）Top（返回当前栈顶数据）Pop （删除栈顶数据）IsEmpty（检查栈是否为空）数组实现 实现自动扩大数组大小 模板类实现和声明要写在一起 template&lt;class T&gt; void ChangeSize1D(T* &amp;a,const int oldSize, const int newSize) { if(newSize&lt;0) throw &#34;newSize must be &gt;=0&#34;; T* temp =new T[newSize]; int number = min(oldSize,newSize); std::copy(a,a+number,temp); delete[] a; a=temp; } 顺序队列（Queue） 特点：先进先出，后进后出队列操作  Push（队尾添加元素） Pop （队首删除元素） Front（返回当前队首数据） Rear（返回当前队尾数据） IsEmpty（检查队列是否为空）  实现回绕（利用数组删除后留下的空间）  rear=front front++ 如果front=rear表示队列满了，要自动扩大数组大小  链表  链表：1.数据域 2.链接域 数组缺点：插入数据时慢，需要向后移动，删除数据时，需要向前移动。 链表可以弥补这些缺点。  树  数组缺点：插入数据，数据要移动。 数组优点：二分查找 链表缺点：无法二分查找 链表优点: 插入删除数据快 树 = 数组的优点 + 链表的优点  
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/c&#43;&#43;%E5%AD%A6%E4%B9%A0/" rel="bookmark">
+			
+			</a>
+		</h3>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
 </article>
 </main>
-
-<div class="pagination">
-	<span class="pagination__item pagination__item--current">1/2</span>
-	<a class="pagination__item pagination__item--next btn" href="/post/page/2/">»</a>
-</div>
 
 
 			</div>
