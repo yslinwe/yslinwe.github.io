@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zh-cn">
 <head>
-	<meta name="generator" content="Hugo 0.57.2" />
+	<meta name="generator" content="Hugo 0.80.0" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,6 @@
 <meta property="og:description" content="Yank&#39;s Personal blog about everything" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yslinwe.github.io/" />
-
 <meta property="og:updated_time" content="2020-04-11T18:50:45+08:00" />
 
 	<meta name="twitter:card" content="summary"/>
@@ -82,9 +81,7 @@
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		in:name example 名字中有“example” in:readme example readme中有“example” in:description example 描述中有“example”
-stars:&gt;1000 star&gt;1000 forks:&gt;1000 fork&gt;1000 pushed:&gt;2019-09-01 2019年9月1日后有更新的
-language:java 用Java编写的项目 更多打开：https://help.github.com/en/github/searching-for-information-on-github/searching-for-repositories
+		in:name example 名字中有“example”&lt;/br&gt; in:readme example readme中有“example”&lt;/br&gt; in:description example 描述中有“example”&lt;/br&gt; stars:&gt;1000 star&gt;1000&lt;/br&gt; forks:&gt;1000 fork&gt;1000&lt;/br&gt; pushed:&gt;2019-09-01 2019年9月1日后有更新的&lt;/br&gt; language:java 用Java编写的项目&lt;/br&gt; 更多打开：https://help.github.com/en/github/searching-for-information-on-github/searching-for-repositories 
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -101,12 +98,8 @@ language:java 用Java编写的项目 更多打开：https://help.github.com/en/g
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		#上传文件 pscp -r newlivedowload root@139.9.116.41:live_download nethogs eth0 ls -lh df -l ps -aux|grep get.py| grep -v grep nohup 运行文件&gt;&gt; output.log 2&gt;&amp;1 &amp; nohup python3 -u main.py &gt; test.out 2&gt;&amp;1 &amp;
-#限制网速 git clone https://github.com/magnific0/wondershaper.git 在确定网卡名称以后，就可以按照以下的命令限制网络带宽：
-sudo wondershaper -a &lt;adapter&gt; -d &lt;rate&gt; -u &lt;rate&gt;  例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：
-sudo wondershaper -a eth0 -d 1024 -u 512  其中参数的含义是：
--a：网卡名称 -d：下行带宽 -u：上行带宽 如果要对网卡解除网络带宽的限制，只需要执行： ./wondershaper -a eth0 -c
-#后台运行
+		上传文件  pscp -r newlivedowload root@139.9.116.41:live_download nethogs eth0 ls -lh df -l ps -aux|grep get.py| grep -v grep nohup 运行文件&gt;&gt; output.log 2&gt;&amp;1 &amp;&lt;/br&gt; nohup python3 -u main.py &gt; test.out 2&gt;&amp;1 &amp; 限制网速  git clone https://github.com/magnific0/wondershaper.git 在确定网卡名称以后，就可以按照以下的命令限制网络带宽： sudo wondershaper -a &lt;adapter&gt; -d &lt;rate&gt; -u &lt;rate&gt; 例如，如果网卡名称是 enp0s8，并且需要把上行、下行速率分别限制为 1024 Kbps 和 512 Kbps，就可以执行以下命令：
+ sudo wondershaper -a eth0 -d 1024 -u 512 其中参数的含义是：-a：网卡名称-d：下行带宽-u：上行带宽如果要对网卡解除网络带宽的限制，只需要执行： ./wondershaper -a eth0 -c 后台运行 可以先执行：screen -S zgy ，screen就会创建一个名字为zgy的会话运行代码 当需要临时离开时（会话中的程序不会关闭，仍在运行）可以用快捷键Ctrl+a d(即按住Ctrl，依次再按a,d)当回来时可以再执行执行：screen -r zgy 即可恢复到离开前创建的zgy会话的工作界面。 screen -ls screen会列出当前存在的会话列表  恢复会话：  screen -r zgy或screen -r pid  退出会话 执行：exit ，会提示：[screen is terminating]，表示已经成功退出screen会话。常用快捷键 kill 掉一个窗口  screen -X -S 4588 quit  Ctrl+a c ：在当前screen会话中创建窗口  Ctrl+a w ：窗口列表  Ctrl+a n ：下一个窗口  Ctrl+a p ：上一个窗口  Ctrl+a 0-9 ：在第0个窗口和第9个窗口之间切换  
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -125,7 +118,7 @@ sudo wondershaper -a eth0 -d 1024 -u 512  其中参数的含义是：
 	<div class="content list__excerpt post__content clearfix">
 		题目描述 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
 //时间过长不能通过。
-bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) { int col = 0, row = 0; row = array.size(); col = array[0].size(); int up = 0, down = row - 1; int right = col - 1, left = 0; while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down+1 &gt; 0&amp;&amp;up &lt; row-1) { int left_temp = left; int rl_mid = (right + left) / 2; cout &lt;&lt; &quot;rl_mid=&quot; &lt;&lt; rl_mid &lt;&lt;&quot; &quot;&lt;&lt;&quot;right=&quot;&lt;&lt;right&lt;&lt;&quot; &quot;&lt;&lt;&quot;left=&quot;&lt;&lt; left&lt;&lt; endl; int rl_val = array[up][rl_mid]; if (target == rl_val) return true; else if (target &lt; rl_val) right = rl_mid - 1; else left = rl_mid + 1; int ud_mid = (up + down) / 2; cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl; int ud_val = array[ud_mid][left_temp]; if (target == ud_val) return true; else if (target &lt; ud_val) down = ud_mid - 1; else up = ud_mid + 1; } return false; } bool Find2(int target, vector&lt;vector&lt;int&gt; &gt; array) { int rows = array.
+bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) {int col = 0, row = 0;row = array.size();col = array[0].size();int up = 0, down = row - 1;int right = col - 1, left = 0;while (left &lt; col-1&amp;&amp;right &gt; 0&amp;&amp;down+1 &gt; 0&amp;&amp;up &lt; row-1){int left_temp = left;int rl_mid = (right + left) / 2;cout &lt;&lt; &quot;rl_mid=&quot; &lt;&lt; rl_mid &lt;&lt;&quot; &quot;&lt;&lt;&quot;right=&quot;&lt;&lt;right&lt;&lt;&quot; &quot;&lt;&lt;&quot;left=&quot;&lt;&lt; left&lt;&lt; endl;int rl_val = array[up][rl_mid];if (target == rl_val)return true;else if (target &lt; rl_val)right = rl_mid - 1;else left = rl_mid + 1;int ud_mid = (up + down) / 2;cout &lt;&lt; &quot;ud_mid=&quot; &lt;&lt; ud_mid &lt;&lt;&quot; &quot;&lt;&lt; &quot;up=&quot;&lt;&lt;up&lt;&lt;&quot; &quot;&lt;&lt;&quot;down=&quot;&lt;&lt;down &lt;&lt;endl;int ud_val = array[ud_mid][left_temp];if (target == ud_val)return true;else if (target &lt; ud_val)down = ud_mid - 1;else up = ud_mid + 1;}return false;}bool Find2(int target, vector&lt;vector&lt;int&gt; &gt; array) {int rows = array.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -142,8 +135,8 @@ bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) { int col = 0, row
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		#题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
-//需要头文件： #include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i++) { if (str[i] == ' ') count++; } int new_length = length + 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == ' ') { str[i--] = '0'; str[i--] = '2'; str[i--] = '%'; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !
+		题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
+方法1 //需要头文件： 	#include&lt;iostream&gt;	#include&lt;stdlib.h&gt;	#include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i++) { if (str[i] == &#39; &#39;) count++; } int new_length = length + 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } 方法2 void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !
 	</div>
 </article>
 </main>
@@ -193,7 +186,7 @@ bool Find(int target, vector&lt;vector&lt;int&gt; &gt; array) { int col = 0, row
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 我的学习博客.
+			&copy; 2021 我的学习博客.
 			<span class="footer__copyright-credits">基于 <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> 引擎和 <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>主題</span>
 		</div>
 	</div>

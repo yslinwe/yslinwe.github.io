@@ -8,8 +8,8 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="剑指office（二）替换空格" />
-<meta property="og:description" content="#题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
-//需要头文件： #include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &#39; &#39;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !" />
+<meta property="og:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
+方法1 //需要头文件： 	#include&lt;iostream&gt;	#include&lt;stdlib.h&gt;	#include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &#39; &#39;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } 方法2 void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yslinwe.github.io/post/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/" />
 <meta property="article:published_time" content="2019-08-21T15:03:24+08:00" />
@@ -17,8 +17,8 @@
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="剑指office（二）替换空格"/>
-<meta name="twitter:description" content="#题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
-//需要头文件： #include&lt;iostream&gt; #include&lt;stdlib.h&gt; #include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &#39; &#39;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !"/>
+<meta name="twitter:description" content="题目描述 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy
+方法1 //需要头文件： 	#include&lt;iostream&gt;	#include&lt;stdlib.h&gt;	#include&lt;string&gt; void replaceSpace(char* str, int length) { int count = 0; for (int i = 0; i &lt; length; i&#43;&#43;) { if (str[i] == &#39; &#39;) count&#43;&#43;; } int new_length = length &#43; 2 * count; int j = length-1; for (int i = new_length-1; i &gt;= 0;) { if (str[j] == &#39; &#39;) { str[i--] = &#39;0&#39;; str[i--] = &#39;2&#39;; str[i--] = &#39;%&#39;; } else { str[i--] = str[j]; } j--; } } 方法2 void replaceSpace2(char* str, int length) { int i = 0; int numSpace = 0; while (str[i] !"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -58,85 +58,91 @@
 <div class="post__toc toc">
 	<div class="toc__title">目录</div>
 	<div class="toc__menu">
-		
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#题目描述">题目描述</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<p>#题目描述
-请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy</p>
-
-<pre><code>//需要头文件：
-
-#include&lt;iostream&gt;
-#include&lt;stdlib.h&gt;
-#include&lt;string&gt;
-
-void replaceSpace(char* str, int length) {
-    int count = 0;
-    for (int i = 0; i &lt; length; i++)
-    {
-        if (str[i] == ' ')
-            count++;
-    }
-    int new_length = length + 2 * count;
-    int j = length-1;
-    for (int i = new_length-1; i &gt;= 0;)
-    {
-        if (str[j] == ' ')
-        {
-            str[i--] = '0';
-            str[i--] = '2';
-            str[i--] = '%';
-        }
-        else
-        {
-            str[i--] = str[j];
-        }
-        j--;
-    }
-}
-
-void replaceSpace2(char* str, int length) {
-    int i = 0;
-    int numSpace = 0;
-    while (str[i] != '\0')
-    {
-        if (str[i] == ' ')
-            numSpace++;
-        ++i;
-    }
-    int newLen = i + numSpace * 2;
-    if (newLen &gt; length)
-        return;
-    for (int j = i; j &gt;= 0, newLen &gt;= 0;)
-    {
-        if (str[j] == ' ')
-        {
-            str[newLen--] = '0';
-            str[newLen--] = '2';
-            str[newLen--] = '%';
-        }
-        else
-            str[newLen--] = str[j];
-        j--;
-    }
-}
-
-#pragma warning(disable:4996)
-void replaceSpace3(char* str, int length)
-{
-    string s = str;
-    for (int i = 0; i &lt; s.size(); ++i) {
-        if (s[i] == ' ') {
-            s.replace(i, 2, &quot;%20&quot;);
-        }
-    }
-    str = new char[s.size()];
-    strcpy(str,s.c_str());
-    cout &lt;&lt; str;
-}
-</code></pre>
-
+			<h3 id="题目描述">题目描述</h3>
+<p>请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy</p>
+<h5 id="方法1">方法1</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">    <span style="color:#75715e">//需要头文件：
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">replaceSpace</span>(<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> str, <span style="color:#66d9ef">int</span> length) {
+		<span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> length; i<span style="color:#f92672">++</span>)
+		{
+			<span style="color:#66d9ef">if</span> (str[i] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>)
+				count<span style="color:#f92672">++</span>;
+		}
+		<span style="color:#66d9ef">int</span> new_length <span style="color:#f92672">=</span> length <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> count;
+		<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> length<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> new_length<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>;)
+		{
+			<span style="color:#66d9ef">if</span> (str[j] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>)
+			{
+				str[i<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span>;
+				str[i<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2&#39;</span>;
+				str[i<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;%&#39;</span>;
+			}
+			<span style="color:#66d9ef">else</span>
+			{
+				str[i<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> str[j];
+			}
+			j<span style="color:#f92672">--</span>;
+		}
+	}
+</code></pre></div><h5 id="方法2">方法2</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">replaceSpace2</span>(<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> str, <span style="color:#66d9ef">int</span> length) {
+		<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+		<span style="color:#66d9ef">int</span> numSpace <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+		<span style="color:#66d9ef">while</span> (str[i] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;\0&#39;</span>)
+		{
+			<span style="color:#66d9ef">if</span> (str[i] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>)
+				numSpace<span style="color:#f92672">++</span>;
+			<span style="color:#f92672">++</span>i;
+		}
+		<span style="color:#66d9ef">int</span> newLen <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> numSpace <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+		<span style="color:#66d9ef">if</span> (newLen <span style="color:#f92672">&gt;</span> length)
+			<span style="color:#66d9ef">return</span>;
+		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> i; j <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>, newLen <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>;)
+		{
+			<span style="color:#66d9ef">if</span> (str[j] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>)
+			{
+				str[newLen<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span>;
+				str[newLen<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2&#39;</span>;
+				str[newLen<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;%&#39;</span>;
+			}
+			<span style="color:#66d9ef">else</span>
+				str[newLen<span style="color:#f92672">--</span>] <span style="color:#f92672">=</span> str[j];
+			j<span style="color:#f92672">--</span>;
+		}
+	}
+</code></pre></div><h5 id="方法3">方法3</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">	<span style="color:#75715e">#pragma warning(disable:4996)
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">replaceSpace3</span>(<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> str, <span style="color:#66d9ef">int</span> length)
+	{
+		string s <span style="color:#f92672">=</span> str;
+		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> s.size(); <span style="color:#f92672">++</span>i) {
+			<span style="color:#66d9ef">if</span> (s[i] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>) {
+				s.replace(i, <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;%20&#34;</span>);
+			}
+		}
+		str <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">char</span>[s.size()];
+		strcpy(str,s.c_str());
+		cout <span style="color:#f92672">&lt;&lt;</span> str;
+	}
+</code></pre></div>
 		</div>
 	</article>
 </main>
@@ -146,7 +152,7 @@ void replaceSpace3(char* str, int length)
 		<img alt="Yank avatar" src="/img/1.jpg" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
-		<span class="authorbox__name">关于 Yank</span>
+		<span class="authorbox__name"></span>
 	</div>
 	<div class="authorbox__description">
 		成功是留给努力的人.
@@ -170,7 +176,7 @@ void replaceSpace3(char* str, int length)
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 我的学习博客.
+			&copy; 2021 我的学习博客.
 			<span class="footer__copyright-credits">基于 <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> 引擎和 <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>主題</span>
 		</div>
 	</div>
