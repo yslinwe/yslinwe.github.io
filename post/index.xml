@@ -42,7 +42,7 @@ defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finde
       <pubDate>Sat, 11 Apr 2020 18:50:45 +0800</pubDate>
       
       <guid>https://yslinwe.github.io/post/one/</guid>
-      <description>#### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &amp;#34;mm00.jpg&amp;#34; #### 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &amp;#34;mm00.jpg&amp;#34; -n &amp;#34;mm01.jpg&amp;#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &amp;#34;Download&amp;#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &amp;#34;Download&amp;#34; -r &amp;#34;Test&amp;#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &amp;#34;Download&amp;#34; -r &amp;#34;Test&amp;#34; #### 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &amp;#34;Download&amp;#34; -r &amp;#34;Test&amp;#34; </description>
+      <description>将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录 OneDriveUploader -s &amp;#34;mm00.jpg&amp;#34; 将同目录下的 mm00.jpg 文件上传到 OneDrive 网盘根目录,并改名为 mm01.jpg OneDriveUploader -s &amp;#34;mm00.jpg&amp;#34; -n &amp;#34;mm01.jpg&amp;#34; 将同目录下的 Download 文件夹上传到 OneDrive 网盘根目录 OneDriveUploader -s &amp;#34;Download&amp;#34; 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中 OneDriveUploader -s &amp;#34;Download&amp;#34; -r &amp;#34;Test&amp;#34; 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 10 线程 OneDriveUploader -t 10 -s &amp;#34;Download&amp;#34; -r &amp;#34;Test&amp;#34; 将同目录下的 Download 文件夹上传到 OneDrive 网盘Test目录中, 使用 15 线程, 并设置分块大小为 20M OneDriveUploader -t 15 -b 20 -s &amp;#34;Download&amp;#34; -r &amp;#34;Test&amp;#34; </description>
     </item>
     
     <item>
