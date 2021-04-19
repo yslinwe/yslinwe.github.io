@@ -1,0 +1,1 @@
+./hugo --theme=PaperMod --baseUrl="https://yslinxx.gitee.io" --buildDrafts;git checkout blogCreateSite;git add .;git commit -m "blogSite update";git push -u origin blogCreateSite;cd public;git checkout master;git add .;git commit -m "update";git push -u origin master
