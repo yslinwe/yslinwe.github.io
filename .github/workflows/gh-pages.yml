@@ -34,17 +34,8 @@ jobs:
       - name: Build
         run: hugo --buildDrafts --gc --verbose --minify
 
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.TOKEN }}
-      #     publish_dir: ./public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./public
-          publish_branch: master  
-          user_name: 'yslinwe'
-          user_email: 'a15775025@163.com'
-          commit_message: 'Deploy commit: ${{ github.event.head_commit.message }}'
