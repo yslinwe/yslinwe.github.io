@@ -1,1 +1,1 @@
-git checkout blogSite;git add .;git commit -m "update";git push -u origin master
+git checkout blogSite;git add .;git commit -m "update";git push -u origin blogSite
