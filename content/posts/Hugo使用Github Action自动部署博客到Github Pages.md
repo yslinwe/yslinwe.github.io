@@ -24,13 +24,13 @@ weight: 3
 点击GitHub头像在下拉栏里进入**Setting-Developer** **->**  **Setting-Personal access**
 选择 **Generate new token**
 
-![](images/Hugo-Github-Action/1.png)
+![1.png](https://img.imgdb.cn/item/607ee8038322e6675c0e837a.png)
 
 在上方填入名字**ACTION_ACCESS_TOKEN**，并勾选repo里的所有选项，还有**admin:repo_hook**
 
-![](images/Hugo-Github-Action/2.png)
+![2.png](https://img.imgdb.cn/item/607ee8038322e6675c0e837e.png)
 
-![](images/Hugo-Github-Action/3.png)
+![3.png](https://img.imgdb.cn/item/607ee8038322e6675c0e8385.png)
 
 点击 **Generate token** 生成 **token**，
 <br>并先复制保存该**token**（记得保存后面要用到）
@@ -86,13 +86,13 @@ jobs:
 
 进入repo的Settings-Secrets一栏，选择New repository secret
 
-![](images/Hugo-Github-Action/5.png)
+![5.png](https://img.imgdb.cn/item/607ee8038322e6675c0e838e.png)
 
 在下面填入刚才生成的token，名字注意需要与上面yml文件里XXX相同
 personal_token: ${{ secrets.XXX }} 
 </br>这里的名称是ACTION_ACCESS_TOKEN
 
-![](images/Hugo-Github-Action/6.png)
+![6.png](https://img.imgdb.cn/item/607ee8038322e6675c0e8393.png)
 
 添加token之后，进入github actions里点击刚才失败的任务，点击右上角Re-run jobs
 </br>这时应该能够成功运行该任务，这说明自动部署已经开始在工作了，以后往blogSite分支push新文章时github actions会自动生成静态博客并发布到master中。
