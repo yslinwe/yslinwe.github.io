@@ -6,7 +6,7 @@ on:
       - blogSite  # 这里的意思是当 main分支发生push的时候，运行下面的jobs，这里先改为blogSite
 
 jobs:
-  deploy: test # 任务名自取
+  deploy: # 任务名自取
     runs-on: ubuntu-18.04	# 在什么环境运行任务
     steps:
       - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
