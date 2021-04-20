@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>markdown on 我的学习博客</title>
-    <link>https://yslinxx.gitee.io/tags/markdown/</link>
+    <link>https://yslinwe.github.io/tags/markdown/</link>
     <description>Recent content in markdown on 我的学习博客</description>
     <image>
-      <url>https://yslinxx.gitee.io/papermod-cover.png</url>
-      <link>https://yslinxx.gitee.io/papermod-cover.png</link>
+      <url>https://yslinwe.github.io/papermod-cover.png</url>
+      <link>https://yslinwe.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Apr 2021 19:42:03 +0800</lastBuildDate><atom:link href="https://yslinxx.gitee.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 19:42:03 +0800</lastBuildDate><atom:link href="https://yslinwe.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown显示</title>
-      <link>https://yslinxx.gitee.io/posts/markdown%E6%98%BE%E7%A4%BA/</link>
+      <link>https://yslinwe.github.io/posts/markdown%E6%98%BE%E7%A4%BA/</link>
       <pubDate>Fri, 16 Apr 2021 19:42:03 +0800</pubDate>
       
-      <guid>https://yslinxx.gitee.io/posts/markdown%E6%98%BE%E7%A4%BA/</guid>
+      <guid>https://yslinwe.github.io/posts/markdown%E6%98%BE%E7%A4%BA/</guid>
       <description>markdown</description>
     </item>
     
     <item>
       <title>MarkdownLearn</title>
-      <link>https://yslinxx.gitee.io/posts/markdownlearn/</link>
+      <link>https://yslinwe.github.io/posts/markdownlearn/</link>
       <pubDate>Fri, 16 Apr 2021 19:33:03 +0800</pubDate>
       
-      <guid>https://yslinxx.gitee.io/posts/markdownlearn/</guid>
+      <guid>https://yslinwe.github.io/posts/markdownlearn/</guid>
       <description>markdown</description>
     </item>
     
