@@ -40,5 +40,5 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages  
-          user_name: 'github-actions[bot]'
+          user_name: 'yslinwe'
           commit_message: 'Deploy commit: ${{ github.event.head_commit.message }}'
