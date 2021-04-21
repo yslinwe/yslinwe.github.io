@@ -145,18 +145,10 @@
       <description>服务器命令行</description>
     </item>
     
-    <item>
-      <title>Categories</title>
-      <link>https://yslinwe.github.io/categories/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yslinwe.github.io/categories/</guid>
-      <description></description>
-    </item>
     
     
     <item>
-      <title>Tags</title>
+      <title>标签</title>
       <link>https://yslinwe.github.io/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -164,6 +156,14 @@
       <description>tags</description>
     </item>
     
+    <item>
+      <title>类别</title>
+      <link>https://yslinwe.github.io/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yslinwe.github.io/categories/</guid>
+      <description>categories</description>
+    </item>
     
   </channel>
 </rss>
