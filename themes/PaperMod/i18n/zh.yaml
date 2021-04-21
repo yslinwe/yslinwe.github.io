@@ -18,6 +18,9 @@
 - id: home
   translation: "主页"
 
+- id: Posts
+  translation: "博文"
+
 - id: code_copy
   translation: "复制"
 
