@@ -1,1 +1,1 @@
-./hugo --theme=PaperMod --baseUrl="https://yslinxx.gitee.io" --buildDrafts;cd public;git checkout master;git add .;git commit -m "update";git push -u origin master
+./hugo --theme=PaperMod --baseUrl="https://yslinwe.github.io" --buildDrafts;cd public;git checkout master;git add .;git commit -m "update";git push -u origin master
