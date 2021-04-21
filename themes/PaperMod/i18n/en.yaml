@@ -1,16 +1,25 @@
 - id: prev_page
-  translation: "上一页"
+  translation: "Prev Page"
 
 - id: next_page
-  translation: "下一页"
+  translation: "Next Page"
 
 - id: read_time
   translation:
-    one : "1 分钟"
-    other: "{{ .Count }} 分钟"
+    one : "1 min"
+    other: "{{ .Count }} min"
 
 - id: toc
-  translation: "目录"
+  translation: "Table of Contents"
 
 - id: translations
-  translation: "语言"
+  translation: "Translations"
+
+- id: home
+  translation: "Home"
+
+- id: code_copy
+  translation: "copy"
+
+- id: code_copied
+  translation: "copied!"

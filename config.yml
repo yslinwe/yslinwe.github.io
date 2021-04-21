@@ -14,10 +14,10 @@ enableEmoji: true
 minify:
     disableXML: true
     # minifyOutput: true
-
+defaultContentLanguage: zh
 languages:
-    en:
-        languageName: "en"
+    zh:
+        languageName: "zh"
         weight: 1
         menu:
             main:
