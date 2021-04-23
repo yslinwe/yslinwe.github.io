@@ -9,7 +9,7 @@
       <link>https://yslinwe.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinwe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinwe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>剑指office（二）替换空格</title>
       <link>https://yslinwe.github.io/posts/%E5%89%91%E6%8C%87office%E4%BA%8C%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</link>
@@ -35,6 +35,15 @@
       
       <guid>https://yslinwe.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
       <description>数据结构学习</description>
+    </item>
+    
+    <item>
+      <title>PicGo配合gtiee实现个人图床</title>
+      <link>https://yslinwe.github.io/posts/picgo%E9%85%8D%E5%90%88gtiee%E5%AE%9E%E7%8E%B0%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yslinwe.github.io/posts/picgo%E9%85%8D%E5%90%88gtiee%E5%AE%9E%E7%8E%B0%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <description>PicGo配合gtiee实现个人图床</description>
     </item>
     
     <item>
