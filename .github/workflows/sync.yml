@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: wearerequired/git-mirror-action@master
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.BLOG }}
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE }}
         with:
           source-repo: "git@github.com:yslinwe/yslinwe.github.io.git"
           destination-repo: "git@gitee.com:yslinwe/yslinwe.github.io.git"
