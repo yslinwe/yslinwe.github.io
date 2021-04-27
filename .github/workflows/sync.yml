@@ -15,9 +15,9 @@ jobs:
       uses: Yikun/gitee-mirror-action@v0.10
       with:
         # 必选，需要同步的Github用户（源）
-        src: github/yslinwe
+        src: github/yslinwe/yslinwe.github.io
         # 必选，需要同步到的Gitee的用户（目的）
-        dst: gitee/yslinxx
+        dst: gitee/yslinxx/yslinxx
         # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
         dst_key: ${{ secrets.PRIVATE }}
         # 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens
