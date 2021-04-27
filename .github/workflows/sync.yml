@@ -13,4 +13,4 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE }}
         with:
           source-repo: "git@github.com:yslinwe/yslinwe.github.io.git"
-          destination-repo: "git@gitee.com:yslinwe/yslinwe.github.io.git"
+          destination-repo: "git@gitee.com:yslinxx/yslinxx.gitee.io.git"
