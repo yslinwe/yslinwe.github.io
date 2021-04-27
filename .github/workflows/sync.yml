@@ -5,12 +5,23 @@ on:
     branches: [ master ]
 
 jobs:
-  sync:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE }}
-        with:
-          source-repo: "git@github.com:yslinwe/yslinwe.github.io.git"
-          destination-repo: "git@gitee.com:yslinxx/yslinxx.gitee.io.git"
+    - name: Mirror the Github organization repos to Gitee.
+      uses: Yikun/gitee-mirror-action@v0.10
+      with:
+        # 必选，需要同步的Github用户（源）
+        src: github/yslinwe/yslinwe.github.io
+        # 必选，需要同步到的Gitee的用户（目的）
+        dst: gitee/yslinxx/yslinxx
+        # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
+        dst_key: ${{ secrets.PRIVATE }}
+        # 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        # 如果是组织，指定组织即可，默认为用户user
+        # account_type: org
+        # 还有黑、白名单，静态名单机制，可以用于更新某些指定库
+        # static_list: "repo_name"
+        # black_list: "repo_name,repo_name2"
+        # white_list: "repo_name,repo_name2"
