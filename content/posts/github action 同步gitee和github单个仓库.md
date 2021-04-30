@@ -140,7 +140,8 @@ jobs:
 
 **解决方案**是：关注「**码云 Gitee**」 微信公众号，绑定个人微信到码云帐号。这样 Action 在登录的过程中，`Gitee` 就不会下发短信验证码，而是通过「**码云 Gitee**」公众号给我们发送一个登录通知，Action 就能成功登录了。
 
-### 问题 2：报 deploy error occurred, message: 'NoneType' object has no attribute 'group' 错误，怎么办？
+####  问题 2：报 deploy error occurred, message: 'NoneType' object has no attribute 'group' 错误，怎么办？
+
 报了这个错误，说明 `Action` 已经成功帮我们登录 `Gitee` 帐号了，但在访问 `Gitee Repo` 的过程中出现问题。
 
 这种情况，一般是 `Gitee Pages Action` 的参数配置错误导致，请仔细检查你的配置信息。
