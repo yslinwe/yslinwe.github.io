@@ -12,9 +12,9 @@ jobs:
     steps:
     - name: Sync to Gitee
       uses: wearerequired/git-mirror-action@master
-      env:
-          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY PRIVATE
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE }}
+      # env:
+      #     # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY PRIVATE
+      #     SSH_PRIVATE_KEY: ${{ secrets.PRIVATE }}
       with:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: "git@github.com:yslinwe/yslinwe.github.io.git"
