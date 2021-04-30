@@ -3,7 +3,7 @@ name: Sync
  
 on:
   push:
-    branches: [ giteePage ]
+    branches: [ blogSite ]
  
  
 jobs:
