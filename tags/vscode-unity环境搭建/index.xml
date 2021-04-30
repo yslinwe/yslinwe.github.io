@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VSCode Unity环境搭建 on 我的学习博客</title>
-    <link>https://yslinwe.github.io/tags/vscode-unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+    <link>https://yslinxx.gitee.io/tags/vscode-unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
     <description>Recent content in VSCode Unity环境搭建 on 我的学习博客</description>
     <image>
-      <url>https://yslinwe.github.io/papermod-cover.png</url>
-      <link>https://yslinwe.github.io/papermod-cover.png</link>
+      <url>https://yslinxx.gitee.io/papermod-cover.png</url>
+      <link>https://yslinxx.gitee.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinwe.github.io/tags/vscode-unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinxx.gitee.io/tags/vscode-unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac VSCode开发Unity环境搭建</title>
-      <link>https://yslinwe.github.io/posts/mac-vscode%E5%BC%80%E5%8F%91unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https://yslinxx.gitee.io/posts/mac-vscode%E5%BC%80%E5%8F%91unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://yslinwe.github.io/posts/mac-vscode%E5%BC%80%E5%8F%91unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://yslinxx.gitee.io/posts/mac-vscode%E5%BC%80%E5%8F%91unity%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>Mac VSCode开发Unity环境搭建</description>
     </item>
     
