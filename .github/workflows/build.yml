@@ -21,7 +21,7 @@ jobs:
           # extended: true
 
       - name: Build github
-        run: hugo --minify	# 使用hugo构建静态网页
+        run: hugo --baseUrl="https://yslinwe.github.io" --minify	# 使用hugo构建静态网页
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
@@ -33,15 +33,13 @@ jobs:
           publish_branch: master	# 发布到哪个branch
       
       - name: Build gitee
-        run: hugo --minify	# 使用hugo构建静态网页
+        run: hugo --baseUrl="https://yslinxx.gitee.io" --minify	# 使用hugo构建静态网页
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }} 该项适用于发布到源码相同repo的情况，不能用于发布到其他repo
-          cname: gitee.com
-          gitee-username: yslinxx
-          gitee-password: ${{ secrets.PASSWORD }}
-          external_repository: yslinxx/yslinxx.gitee.io	# 发布到哪个repo
+          personal_token: ${{ secrets.BLOG }}
+          external_repository: yslinwe/yslinwe.github.io	# 发布到哪个repo
           publish_dir: ./public	# 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
           publish_branch: giteePage	# 发布到哪个branch
