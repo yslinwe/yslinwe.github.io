@@ -21,7 +21,7 @@ jobs:
           # extended: true
 
       - name: Build github
-        run: hugo --baseUrl="https://yslinwe.github.io" --minify	# 使用hugo构建静态网页
+        run: hugo --theme=PaperMod --baseUrl="https://yslinwe.github.io" --buildDrafts --minify	# 使用hugo构建静态网页
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
@@ -33,7 +33,7 @@ jobs:
           publish_branch: master	# 发布到哪个branch
       
       - name: Build gitee
-        run: hugo --baseUrl="https://yslinxx.gitee.io" --minify	# 使用hugo构建静态网页
+        run: hugo --theme=PaperMod --baseUrl="https://yslinxx.gitee.io" --buildDrafts --minify	# 使用hugo构建静态网页
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
