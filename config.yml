@@ -194,9 +194,9 @@ params:
 #     series: series
 
 markup:
-     goldmark:
-        renderer:
-            unsafe: true
+    goldmark:
+      renderer:
+          unsafe: true
     highlight:
         anchorLineNos: true
         codeFences: true
