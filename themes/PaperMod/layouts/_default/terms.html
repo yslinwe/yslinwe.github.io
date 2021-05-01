@@ -1,27 +1,24 @@
-{{- define "main" }}
-
-{{- if .Title }}
-<header class="page-header">
-    <h1>{{ .Title }}</h1>
-    {{- if .Description }}
-    <div class="post-description">
-        {{ .Description }}
-    </div>
-    {{- end }}
+{{ define "main" }}
+{{ $title := .Title }}
+<header class="header basicflex-column">
+  <h3 class="terms__title capitalize h3">{{ $title }}</h3>
 </header>
-{{- end }}
-
-<ul class="terms-tags">
-    {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.Alphabetical }}
-    {{- $name := .Name }}
-    {{- $count := .Count }}
-    {{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
-    </li>
-    {{- end }}
-    {{- end }}
-</ul>
-
-{{- end }}{{/* end main */ -}}
+<main class="terms main">  
+  <div class="terms__list">
+    {{ range $index, $element := .Data.Terms }}
+    {{ if $index }}
+      <a href="{{ .Page.RelPermalink }}" class="terms__item {{ if lt (len $element) 5 }}is-small{{ else if lt (len $element) 10 }}is-normal{{ else if lt (len $element) 20 }}is-medium{{ else if ge (len $element) 20 }}is-large{{ end }}">
+        <span class="terms__{{ lower  $title }}">
+          {{ $element.Page.Title }}
+        </span>
+        <span class="terms__len">({{ printf "%#v" (len $element) }})</span>
+      </a>
+    {{ end }}
+    {{ end }}
+  </div>
+</main>
+<aside class="hide">
+  {{ partial "search/site-search" . }}
+</aside>
+{{ partial "script/taxo-script" . }}
+{{ end }}
