@@ -9,7 +9,7 @@
       <link>https://yslinxx.gitee.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinxx.gitee.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinxx.gitee.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数据结构学习</title>
       <link>https://yslinxx.gitee.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/</link>
@@ -17,6 +17,15 @@
       
       <guid>https://yslinxx.gitee.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
       <description>数据结构学习</description>
+    </item>
+    
+    <item>
+      <title>Git Flow 的正确使用姿势</title>
+      <link>https://yslinxx.gitee.io/posts/git-flow-%E7%9A%84%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8%E5%A7%BF%E5%8A%BF/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yslinxx.gitee.io/posts/git-flow-%E7%9A%84%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8%E5%A7%BF%E5%8A%BF/</guid>
+      <description>Git Flow 的正确使用姿势</description>
     </item>
     
     <item>

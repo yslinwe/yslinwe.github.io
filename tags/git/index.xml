@@ -9,7 +9,16 @@
       <link>https://yslinxx.gitee.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinxx.gitee.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yslinxx.gitee.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Flow 的正确使用姿势</title>
+      <link>https://yslinxx.gitee.io/posts/git-flow-%E7%9A%84%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8%E5%A7%BF%E5%8A%BF/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yslinxx.gitee.io/posts/git-flow-%E7%9A%84%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8%E5%A7%BF%E5%8A%BF/</guid>
+      <description>Git Flow 的正确使用姿势</description>
+    </item>
+    
     <item>
       <title>git回退上一个版本</title>
       <link>https://yslinxx.gitee.io/posts/git%E5%9B%9E%E9%80%80%E4%B8%8A%E4%B8%80%E4%B8%AA%E7%89%88%E6%9C%AC/</link>
