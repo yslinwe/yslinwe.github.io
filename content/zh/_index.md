@@ -25,9 +25,9 @@ header:
     paddingY: 0
     align: center
     title:
-      - HUGO
+      - 学习博客
     subtitle:
-      - The world’s fastest framework for building websites
+      - 努力学习，天天向上！
     titleColor: 
     titleShadow: true
     titleFontSize: 44
