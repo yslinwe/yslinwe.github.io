@@ -1,3 +1,4 @@
+---
 title: "Mac中删除.DS_Store"
 summary: Mac中删除.DS_Store
 date: 2021-04-25
@@ -5,7 +6,6 @@ tags: ["Mac"]
 author: "yanSl"
 draft: false
 weight: 3
-
 ---
 
 ### 删除 .DS_Store
