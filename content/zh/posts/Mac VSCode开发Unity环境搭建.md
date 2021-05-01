@@ -3,7 +3,7 @@ title: "Mac VSCode开发Unity环境搭建"
 summary: Mac VSCode开发Unity环境搭建
 date: 2021-04-20
 tags: ["VSCode Unity环境搭建"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

@@ -3,7 +3,7 @@ title: "OneDriveUploader使用"
 summary: OneDriveUploader使用
 date: 2020-04-11
 tags: ["onedrive"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

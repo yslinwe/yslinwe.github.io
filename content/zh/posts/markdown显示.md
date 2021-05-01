@@ -3,7 +3,7 @@ title: "Markdown显示"
 date: 2021-04-16T19:42:03+08:00
 summary: markdown
 tags: ["markdown"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

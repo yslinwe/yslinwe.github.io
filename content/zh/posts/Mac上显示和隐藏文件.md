@@ -3,7 +3,7 @@ title: "Mac上显示和隐藏文件"
 summary: Mac上显示和隐藏文件
 date: 2021-02-20
 tags: ["Mac"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

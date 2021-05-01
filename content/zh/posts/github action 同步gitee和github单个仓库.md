@@ -3,7 +3,7 @@ title: "Github Action 同步gitee和github单个仓库"
 summary: Github Action 同步gitee和github单个仓库
 date: 2021-04-23
 tags: ["Github Action","github"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

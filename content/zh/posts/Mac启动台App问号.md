@@ -3,7 +3,7 @@ title: "Mac启动台App问号"
 summary: Mac启动台App问号
 date: 2021-02-21
 tags: ["Mac"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

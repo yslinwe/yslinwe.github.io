@@ -3,7 +3,7 @@ title: "PicGo配合gtiee实现个人图床"
 summary: PicGo配合gtiee实现个人图床
 date: 2021-04-23
 tags: ["PicGo","个人图床"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

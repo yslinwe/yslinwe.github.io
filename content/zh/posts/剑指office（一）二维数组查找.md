@@ -3,7 +3,7 @@ title: "剑指office（一）二维数组查找"
 summary: 剑指office（一）二维数组查找
 date: 2019-08-21
 tags: ["剑指office"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

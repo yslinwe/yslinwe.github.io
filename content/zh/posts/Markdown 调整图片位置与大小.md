@@ -3,7 +3,7 @@ title: "Markdown 调整图片位置与大小"
 summary: Markdown 调整图片位置与大小
 date: 2021-04-23
 tags: ["Markdown"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

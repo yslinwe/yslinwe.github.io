@@ -3,7 +3,7 @@ title: "Mac终端美化"
 summary: Mac终端美化
 date: 2021-04-17
 tags: ["Mac"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

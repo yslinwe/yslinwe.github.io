@@ -3,7 +3,7 @@ title: "MarkdownLearn"
 date: 2021-04-16T19:33:03+08:00
 summary: markdown
 tags: ["markdown"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

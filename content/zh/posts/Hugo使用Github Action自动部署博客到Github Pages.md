@@ -3,7 +3,7 @@ title: "Hugo使用Github Action自动部署博客到Github Pages"
 summary: Hugo使用Github Action自动部署博客到Github Pages
 date: 2021-04-20
 tags: ["Github Action","Hugo"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

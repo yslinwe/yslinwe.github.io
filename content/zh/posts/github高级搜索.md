@@ -3,7 +3,7 @@ title: "Github高级搜索"
 summary: Github高级搜索
 date: 2020-04-10
 tags: ["github高级搜索"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---

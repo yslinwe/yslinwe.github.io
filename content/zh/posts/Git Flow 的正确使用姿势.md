@@ -3,7 +3,7 @@ title: "Git Flow 的正确使用姿势"
 summary: Git Flow 的正确使用姿势
 date: 2021-05-01
 tags: ["git"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 

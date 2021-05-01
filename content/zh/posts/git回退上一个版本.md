@@ -3,7 +3,7 @@ title: "git回退上一个版本"
 summary: git回退上一个版本
 date: 2021-04-21
 tags: ["git"]
-author: "yanSl"
+author: "YSL"
 draft: false
 weight: 3
 ---
