@@ -18,7 +18,7 @@ Git版本管理同样需要一个清晰的流程和规范。
 Vincent Driessen 为了解决这个问题提出了 [A Successful Git Branching Model](https://links.jianshu.com/go?to=http%3A%2F%2Fnvie.com%2Fposts%2Fa-successful-git-branching-model%2F)
 以下是基于Vincent Driessen提出的Git Flow 流程图
 
-![1366859-eda8da6a7d2385ad](https://gitee.com/yslinxx/image-bed/raw/master/images/1366859-eda8da6a7d2385ad.png)
+  ![1366859-eda8da6a7d2385ad](https://gitee.com/yslinxx/image-bed/raw/master/images/1366859-eda8da6a7d2385ad.png)
 
 ### Git Flow 的常用分支
 
@@ -52,19 +52,19 @@ Vincent Driessen 为了解决这个问题提出了 [A Successful Git Branching M
 
 * #### Feature 分支
 
-  Feature分支做完后，必须合并回Develop分支, 合并完分支后一般会删点这个Feature分支，毕竟保留下来意义也不大。![1366859-d417601143f7bc82](/Users/popo/Downloads/iloveimg-compressed/1366859-d417601143f7bc82.png)
+  Feature分支做完后，必须合并回Develop分支, 合并完分支后一般会删点这个Feature分支，毕竟保留下来意义也不大。![1366859-d417601143f7bc82](https://gitee.com/yslinxx/image-bed/raw/master/images/1366859-d417601143f7bc82.png)
 
 * #### Release 分支
 
   Release分支基于Develop分支创建，打完Release分支之后，我们可以在这个Release分支上测试，修改Bug等。同时，其它开发人员可以基于Develop分支新建Feature (记住：一旦打了Release分支之后不要从Develop分支上合并新的改动到Release分支)发布Release分支时，合并Release到Master和Develop， 同时在Master分支上打个Tag记住Release版本号，然后可以删除Release分支了。
   
-  ![1366859-539ffe4e5b73715e](/Users/popo/Downloads/iloveimg-compressed/1366859-539ffe4e5b73715e.png)
+  ![1366859-539ffe4e5b73715e](https://gitee.com/yslinxx/image-bed/raw/master/images/1366859-539ffe4e5b73715e.png)
 
 * #### Hotfix 分支
 
   hotfix分支基于Master分支创建，开发完后需要合并回Master和Develop分支，同时在Master上打一个tag。
 
-  ![1366859-091b03e7e4a6daa3](/Users/popo/Downloads/iloveimg-compressed/1366859-091b03e7e4a6daa3.png)
+  ![1366859-091b03e7e4a6daa3](https://gitee.com/yslinxx/image-bed/raw/master/images/1366859-091b03e7e4a6daa3.png)
 
 ### Git Flow 命令示例
 
