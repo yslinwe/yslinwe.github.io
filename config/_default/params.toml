@@ -166,6 +166,7 @@ commento = false
   facebook = ""
   twitter = ""
   github = "https://github.com/yslinwe"
+  gitlab = "https://gitee.com/yslinxx"
   stack-overflow = ""
   instagram = ""
   google-plus = ""
@@ -180,7 +181,6 @@ commento = false
   weibo = ""
   douban = ""
   csdn = ""
-  gitlab = "https://gitee.com/yslinxx"
   mastodon = ""
   jianshu = ""
   zhihu = ""
@@ -201,10 +201,10 @@ commento = false
 
 # possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "pocket", "feedly", "hatena", "pinterest", "delicious", "google"]
 [[share]]
-  name = "facebook"
+  name = ""
   username = ""
 [[share]]
-  name = "twitter"
+  name = ""
 
 [[footerLinks]]
   name = ""
