@@ -119,7 +119,7 @@ jobs:
 
      * 获取私钥
 
-       ```
+       ```bash
        cat ~/.ssh/id_rsa
        ```
 
