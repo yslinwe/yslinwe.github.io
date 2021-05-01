@@ -67,67 +67,67 @@ jobs:
 
 > **PRIVATE **: 存放你的 `id_rsa` 私钥。**PASSWORD**: 存放你的 `Gitee` 账户密码。
 
-1. 配置**PRIVATE**
+### 1. 配置**PRIVATE**
 
-   * 生成SSH密钥
+* 生成SSH密钥
 
-     ```shell
-     ssh-keygen -t rsa -C "name"
-     ```
+  ```shell
+  ssh-keygen -t rsa -C "name"
+  ```
 
-     "name"是任意指定的标识
+  "name"是任意指定的标识
 
-     * 获取公钥
+  * 获取公钥
 
-     ```shell
-     cat ~/.ssh/id_rsa.pub
-     ```
+  ```shell
+  cat ~/.ssh/id_rsa.pub
+  ```
 
-     * 绑定`Gitee`
+  * 绑定`Gitee`
 
-   * 复制公钥，通过仓库主页个人图像下拉设置->SSH公钥添加公钥
+* 复制公钥，通过仓库主页个人图像下拉设置->SSH公钥添加公钥
 
-     * 测试
+  * 测试
 
-       打开终端输入：
+    打开终端输入：
 
-       ```shell
-       ssh -T git@gitee.com
-       ```
+    ```shell
+    ssh -T git@gitee.com
+    ```
 
-       显示如下图则成功
+    显示如下图则成功
 
-       ![image-20210430222406658](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20210430222406658.png)
+    ![image-20210430222406658](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20210430222406658.png)
 
-   * 绑定`Github`
+* 绑定`Github`
 
-     复制公钥，通过仓库主页个人图像下拉Setting->SSH and GPG keys添加公钥
+  复制公钥，通过仓库主页个人图像下拉Setting->SSH and GPG keys添加公钥
 
-     * 测试
+  * 测试
 
-       打开终端输入：
+    打开终端输入：
 
-       ```shell
-       ssh -T git@github.com
-       ```
+    ```shell
+    ssh -T git@github.com
+    ```
 
-       显示如下图则成功
+    显示如下图则成功
 
-       ![image-20210430222851660](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20210430222851660.png)
+    ![image-20210430222851660](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20210430222851660.png)
 
-   * 配置
+* 配置
 
-     * 获取私钥
+  * 获取私钥
 
-       ```bash
-       cat ~/.ssh/id_rsa
-       ```
+    ```bash
+    cat ~/.ssh/id_rsa
+    ```
 
-       >  复制私钥，在仓库的Setting->Secrets路径下命名PRIVATE，**Value**添加私钥（记得复制全部内容）
+    >  复制私钥，在仓库的Setting->Secrets路径下命名PRIVATE，**Value**添加私钥（记得复制全部内容）
 
-2. 配置**PASSWORD**
+### 2. 配置**PASSWORD**
 
-   > 在仓库的Setting->Secrets路径下命名**PASSWORD**，**Value**添加**`Gitee`**账户密码。
+> 在仓库的Setting->Secrets路径下命名**PASSWORD**，**Value**添加**`Gitee`**账户密码。
 
 如果一切配置正常，并成功触发 `Gitee Pages Action` ，我们可能会收到一封来自 `Gitee` 的告警邮件/站内信。放心，这是 `GitHub Action` 程序帮我们登录到 `Gitee` 官网，并为我们点击了项目的部署按钮。
 
