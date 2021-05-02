@@ -1,7 +1,8 @@
 +++
 aliases = ["posts","articles","blog","showcase","docs"]
-title = "Posts"
+title = "博客"
 author = "Hugo Authors"
 tags = ["index"]
-description = "Post page"
+description = "博客页面"
+
 +++
