@@ -14,7 +14,7 @@ images:
     caption: man
   - image: child.jpg
     caption: child
-  - image: https://lh3.googleusercontent.com/-tdIxgDALMuU/YIP9CKXBH2I/AAAAAAAAB4M/molTMQ-usNwsz9-cj_koD8rhalK3tzpoACLcBGAsYHQ/2021-04-23-03.jpg
+  - image: https://cdn.pixabay.com/photo/2021/03/14/10/13/girl-6093779__340.jpg
     caption: beautiful
 image: images/feature2/gallery.png
 ---
