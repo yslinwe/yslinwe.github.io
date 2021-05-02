@@ -50,7 +50,7 @@
 
     @include themify($codeblock) {
       color: themed('content-pre-color');
-      // text-decoration: underline double themed('content-pre-main-color');
+      text-decoration: underline double themed('content-pre-main-color');
     }
   }
   
