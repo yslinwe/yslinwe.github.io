@@ -6,6 +6,7 @@ tags: ["剑指office"]
 author: "YSL"
 draft: false
 weight: 3
+image: https://cdn.pixabay.com/photo/2020/10/09/13/12/man-5640540__340.jpg
 ---
 
 ### 题目描述

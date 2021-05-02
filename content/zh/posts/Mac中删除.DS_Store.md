@@ -6,6 +6,7 @@ tags: ["Mac"]
 author: "YSL"
 draft: false
 weight: 3
+image: https://cdn.pixabay.com/photo/2021/04/04/11/48/city-6149846__340.jpg
 ---
 
 ### 删除 .DS_Store

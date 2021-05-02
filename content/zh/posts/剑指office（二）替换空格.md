@@ -6,6 +6,7 @@ tags: ["剑指office"]
 author: "YSL"
 draft: false
 weight: 3
+image: https://cdn.pixabay.com/photo/2017/09/29/13/36/river-2799103__340.jpg
 ---
 
 ### 题目描述

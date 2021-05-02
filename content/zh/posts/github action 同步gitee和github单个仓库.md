@@ -6,6 +6,7 @@ tags: ["Github Action","github"]
 author: "YSL"
 draft: false
 weight: 3
+image: https://cdn.pixabay.com/photo/2020/04/20/20/47/drip-5069808__340.jpg
 ---
 
 ### 入参

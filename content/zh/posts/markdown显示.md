@@ -6,6 +6,7 @@ tags: ["markdown"]
 author: "YSL"
 draft: false
 weight: 3
+image: https://cdn.pixabay.com/photo/2020/11/07/23/22/beach-5722568__340.jpg
 ---
 
 一级标题
