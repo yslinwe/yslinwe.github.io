@@ -6,4 +6,4 @@ description: 历史墙
 titleWrap: wrap
 ---
 
-archive page
+历史墙
