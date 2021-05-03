@@ -37,3 +37,8 @@
   name = "博客"
   url = "posts"
   weight = 5
+
+[[main]]
+  parent = "posts"
+  name = "剑指offer"
+  url = "posts/剑指offer"
