@@ -5,7 +5,7 @@ description: "剑指office（二十）包含min函数的栈"
 draft: false
 hideToc: false
 enableToc: true
-enableTocContent: true
+enableTocContent: false
 author: YSL
 authorEmoji: 🎅
 pinned: false
