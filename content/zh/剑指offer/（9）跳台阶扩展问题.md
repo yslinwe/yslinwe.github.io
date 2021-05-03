@@ -8,7 +8,7 @@ enableToc: true
 enableTocContent: true
 author: YSL
 authorEmoji: 🎅
-pinned: true
+pinned: false
 tags:
 - 剑指office
 series:
