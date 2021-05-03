@@ -5,7 +5,7 @@ description: "剑指office"
 draft: false
 hideToc: false
 enableToc: true
-enableTocContent: true
+enableTocContent: false
 author: YSL
 authorEmoji: 🎅
 pinned: true
@@ -18,7 +18,6 @@ categories:
 weight: 3
 image: https://cdn.pixabay.com/photo/2021/04/19/02/06/castle-6189967__340.jpg
 type : "posts"
-enableBio: false
 ---
 
 test
