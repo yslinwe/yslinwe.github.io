@@ -2,7 +2,7 @@ title = "我的学习博客"
 
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
-hasCJKLanguage = false
+hasCJKLanguage = true
 
 summaryLength = 70
 buildFuture = true
