@@ -1,11 +1,11 @@
 ---
 title: "剑指office（二十）包含min函数的栈"
-date: 2020-04-10
+date: 2020-04-29
 description: "剑指office（二十）包含min函数的栈"
 draft: false
 hideToc: false
 enableToc: true
-enableTocContent: false
+enableTocContent: true
 author: YSL
 authorEmoji: 🎅
 pinned: true
