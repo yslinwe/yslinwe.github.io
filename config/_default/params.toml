@@ -60,14 +60,14 @@ publicationIcon = "📚"
 typeIcon = "🎯"
 
 # whoami
-myname = "YSL"
-email = "yslinwe@gmail.com"
-whoami = "Web Developer"
-bioImageUrl = ""
-useGravatar = ""
-location = "GuangZhou, China"
-organization = "Hello"
-link = "https://yslinwe.github.io"
+#myname = "YSL"
+#email = "yslinwe@gmail.com"
+#whoami = "Web Developer"
+#bioImageUrl = ""
+#useGravatar = ""
+#location = "GuangZhou, China"
+#organization = "Hello"
+#link = "https://yslinwe.github.io"
 
 # sidebar
 enableBio = true
