@@ -41,7 +41,7 @@ searchThreshold = 0.4 # 0.0: exact match, 1.0: any match
 # body
 enableBreadcrumb = true
 enableGoToTop = true
-enableWhoami = true
+enableWhoami = false
 summaryShape = "classic" # card, classic, compact
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 archivePaginate = 13
@@ -70,7 +70,7 @@ typeIcon = "🎯"
 #link = "https://yslinwe.github.io"
 
 # sidebar
-enableBio = false
+enableBio = true
 enableBioImage = false
 enableSidebar = true
 enableSidebarTags = true
