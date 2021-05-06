@@ -70,8 +70,8 @@ typeIcon = "🎯"
 #link = "https://yslinwe.github.io"
 
 # sidebar
-enableBio = true
-enableBioImage = true
+enableBio = false
+enableBioImage = false
 enableSidebar = true
 enableSidebarTags = true
 enableSidebarSeries = true
@@ -86,7 +86,7 @@ enableTocSwitch = true
 itemsPerCategory = 5
 sidebarPosition = "right"
 tocLevels = ["h2", "h3", "h4"]
-enableSidebarPostsByOrder = false
+enableSidebarPostsByOrder = true
 
 # footer
 showPoweredBy = true
