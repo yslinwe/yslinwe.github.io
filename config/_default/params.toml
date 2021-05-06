@@ -79,13 +79,13 @@ enableSidebarCategories = true
 enableHomeSidebarTitles = true
 enableListSidebarTitles = true
 enableToc = true
-hideToc = true
+hideToc = false
 tocFolding = true
-tocPosition = "outer" # inner, outer
+tocPosition = "inner" # inner, outer
 enableTocSwitch = true
 itemsPerCategory = 5
 sidebarPosition = "right"
-tocLevels = ["h3", "h4", "h5"]
+tocLevels = ["h2", "h3", "h4"]
 enableSidebarPostsByOrder = true
 
 # footer
