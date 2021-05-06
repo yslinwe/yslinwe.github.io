@@ -104,7 +104,7 @@
       border-radius: 0.125rem;
       
       @include flexbox();
-      @include flex-grow(inherit);
+      @include flex-grow(0);
       @include align-items(center);
       @include justify-content(flex-start);
       @include themify($themes) {
