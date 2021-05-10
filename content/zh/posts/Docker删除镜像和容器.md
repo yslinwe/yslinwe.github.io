@@ -1,0 +1,38 @@
+---
+title: "Docker删除镜像和容器"
+summary: Docker删除镜像和容器
+date: 2021-05-10
+tags: ["Docker"]
+author: "YSL"
+draft: false
+weight: 3
+type: "post"
+image: https://cdn.pixabay.com/photo/2021/05/03/10/12/buttercup-6225833__340.jpg
+---
+
+### Docker删除镜像和容器
+
+#### 查看运行的容器
+
+```shell
+docker ps
+```
+
+#### 查看已经退出的容器
+
+```shell
+docker ps -a
+```
+
+#### 删除镜像
+
+```shell
+docker rmi -f 镜像id
+```
+
+#### 删除容器
+
+```shell
+docker rm -f 容器id
+```
+
