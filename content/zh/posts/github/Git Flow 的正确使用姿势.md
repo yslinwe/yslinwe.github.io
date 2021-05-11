@@ -6,7 +6,7 @@ tags: ["git"]
 author: "YSL"
 draft: false
 weight: 3
-image: https://cdn.pixabay.com/photo/2020/04/28/12/40/tulips-5104311__340.jpg
+ https://cdn.pixabay.com/photo/2020/04/28/12/40/tulips-5104311__340.jpg
 ---
 
 ### Git Flow 的正确使用姿势

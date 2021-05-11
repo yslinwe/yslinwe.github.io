@@ -16,7 +16,6 @@ series:
 categories:
 - 剑指office
 weight: 3
-image: https://cdn.pixabay.com/photo/2021/04/19/02/06/castle-6189967__340.jpg
 ---
 
 [剑指office（一）二维数组查找](https://yslinwe.github.io/posts/%E5%89%91%E6%8C%87offer/1%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE/)

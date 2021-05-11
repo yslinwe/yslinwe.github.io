@@ -6,7 +6,7 @@ tags: ["Github Action","Hugo"]
 author: "YSL"
 draft: false
 weight: 3
-image: https://cdn.pixabay.com/photo/2020/04/22/08/06/dolomites-5076492__340.jpg
+ https://cdn.pixabay.com/photo/2020/04/22/08/06/dolomites-5076492__340.jpg
 ---
 ### 创建repo
 

@@ -5,9 +5,6 @@ date: 2021-05-10
 tags: ["Docker"]
 author: "YSL"
 draft: false
-weight: 3
-type: "post"
-image: https://cdn.pixabay.com/photo/2021/05/03/10/12/buttercup-6225833__340.jpg
 ---
 
 ### Docker删除镜像和容器

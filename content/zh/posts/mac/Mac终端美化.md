@@ -6,7 +6,7 @@ tags: ["Mac"]
 author: "YSL"
 draft: false
 weight: 3
-image: https://cdn.pixabay.com/photo/2021/04/20/17/05/adler-6194438__340.jpg
+ https://cdn.pixabay.com/photo/2021/04/20/17/05/adler-6194438__340.jpg
 ---
 #### Part1 安装oh-my-zsh
 * 第一步 clone oh-my-zsh项目

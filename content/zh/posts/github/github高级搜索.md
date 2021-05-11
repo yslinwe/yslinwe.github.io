@@ -6,7 +6,7 @@ tags: ["github高级搜索"]
 author: "YSL"
 draft: false
 weight: 3
-image: https://cdn.pixabay.com/photo/2020/04/21/06/41/flower-5071405__340.jpg
+ https://cdn.pixabay.com/photo/2020/04/21/06/41/flower-5071405__340.jpg
 ---
 ```shell
 in:name example 名字中有“example”

@@ -6,7 +6,7 @@ tags: ["markdown"]
 author: "YSL"
 draft: false
 weight: 3
-image: https://cdn.pixabay.com/photo/2021/04/22/01/27/bird-6197798__340.jpg
+ https://cdn.pixabay.com/photo/2021/04/22/01/27/bird-6197798__340.jpg
 
 ---
 
