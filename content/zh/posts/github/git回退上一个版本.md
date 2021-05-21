@@ -6,7 +6,6 @@ tags: ["git"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2021/01/15/17/01/green-5919790__340.jpg
 ---
 
 ### git回退到上个版本

@@ -6,7 +6,6 @@ tags: ["PicGo","个人图床"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2021/01/22/20/16/heron-5941013__340.jpg
 ---
 ### 安装软件
 

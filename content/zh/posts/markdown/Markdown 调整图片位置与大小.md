@@ -6,7 +6,6 @@ tags: ["Markdown"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2015/02/06/21/27/pyrite-626549__340.jpg
 ---
 ### 插入图片
 

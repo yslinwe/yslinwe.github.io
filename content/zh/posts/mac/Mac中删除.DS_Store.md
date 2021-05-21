@@ -6,7 +6,6 @@ tags: ["Mac"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2021/02/02/16/41/flower-5974552__340.jpg
 ---
 
 ### 删除 .DS_Store

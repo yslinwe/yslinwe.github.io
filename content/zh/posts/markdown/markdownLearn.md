@@ -6,7 +6,6 @@ tags: ["markdown"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2020/06/20/11/08/cat-5320568__340.jpg
 ---
 ```
 一级标题

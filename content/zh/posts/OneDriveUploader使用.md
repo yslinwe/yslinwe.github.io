@@ -6,7 +6,6 @@ tags: ["onedrive"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2021/04/15/15/04/desert-6181352__340.jpg
 ---
 
 ### OneDriveUploader - Written in GoLang

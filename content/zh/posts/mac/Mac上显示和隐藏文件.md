@@ -6,7 +6,6 @@ tags: ["Mac"]
 author: "YSL"
 draft: false
 weight: 3
- https://cdn.pixabay.com/photo/2020/12/10/09/22/beach-front-5819728__340.jpg
 ---
 
 ### 方法一：
