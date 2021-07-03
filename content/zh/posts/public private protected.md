@@ -2,7 +2,7 @@
 title: "public，private，protected的区别，继承方法与访问权限"
 summary: public，private，protected的区别，继承方法与访问权限
 date: 2021-06-04
-tags: [""public，private，protected"]
+tags: ["public，private，protected"]
 author: "YSL"
 draft: false
 weight: 2
