@@ -1,7 +1,7 @@
 ---
 title: "nextcloud搭建"
 summary: nextcloud搭建
-date: 2020-04-11
+date: 2021-07-12
 tags: ["nextcloud"]
 author: "YSL"
 draft: false
