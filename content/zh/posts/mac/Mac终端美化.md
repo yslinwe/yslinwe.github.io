@@ -20,8 +20,15 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ```shell
 chsh -s /bin/zsh
 ```
----
+
+* 第四步 新打开终端
+
+```
+compaudit | xargs chmod g-w,o-w
+```
+
 修改后终端变为这样<br>ps:这里选择了steeef主题，不是默认的robbyrussell主题
+
 ### 终端的命令提示符
 <img src="https://img.imgdb.cn/item/607a4f2c8322e6675cd6199d.png" width="50%" div align=center />
 
@@ -66,3 +73,5 @@ brew install zsh-syntax-highlighting
 ```
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
+
+Ps 新打开终端才会显示。
