@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir="{{ $.Param "languagedir" | default "ltr" }}">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ block "title" . }}{{ .Title }} – {{ .Site.Title }}{{ end }}</title>
+    {{ partial "head/scripts" . }}    
+    {{ partial "head/styles" . }}
+    {{ partial "head/meta" . }}
+    {{ partial "head/meta_json_ld" . }}
+    {{ partial "head/services" . }}
+    {{ partial "head/custom-head" . }}
+</head>
+
+<body id="root" class="theme__{{ index .Site.Params.themeOptions 0 }}">
+    <script>
+        var localTheme = localStorage.getItem('theme');
+        if (localTheme) {
+            document.getElementById('root').className = 'theme__' + localTheme;
+        }
+    </script>
+    <div id="container">
+        {{ partial "body/main-left" . }}
+        <div class="wrapper" data-type="{{ .Type }}" data-kind="{{ .Kind }}">
+            {{ partial "navbar/site-nav" . }}
+            {{ partial "header/site-header" . }}
+            {{ block "main" . }}{{ end }}
+            {{ partial "body/custom-body" . }}
+            {{ partial "footer/site-footer" . }}
+        </div>
+        {{ partial "body/main-right" . }}
+    </div>
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    <script>
+        L2Dwidget.init({
+            "model": {
+    　　　　　　　//jsonpath控制显示模型
+                jsonPath: "https://unpkg.com/live2d-widget-model-hijiki/assets/hijiki.model.json",
+            },
+            "display": {
+                "position": "right", //看板娘的表现位置
+                "width": 200,  //宽度
+                "height": 350, //高度
+                "hOffset": -10,
+                "vOffset": -50
+            },
+            "mobile": {
+                "show": true,
+            },
+            "react": {
+                "opacityDefault": 1,//不透明度，可调
+                "opacityOnHover": 0.2
+            }
+        });
+    </script>
+</body>
+
+</html>
