@@ -32,7 +32,8 @@
         </div>
         {{ partial "body/main-right" . }}
     </div>
-    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+</body>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
     <script>
         L2Dwidget.init({
             "model": {
@@ -41,13 +42,14 @@
             },
             "display": {
                 "position": "right", //看板娘的表现位置
-                "width": 200,  //宽度
-                "height": 350, //高度
+                "width": 100,  //宽度
+                "height": 175, //高度
                 "hOffset": -10,
                 "vOffset": -50
             },
             "mobile": {
                 "show": true,
+                "scale": 0.5 //范围
             },
             "react": {
                 "opacityDefault": 1,//不透明度，可调
@@ -55,6 +57,4 @@
             }
         });
     </script>
-</body>
-
 </html>
