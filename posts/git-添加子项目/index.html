@@ -268,13 +268,74 @@ submodule的删除稍微麻烦点：首先，要在“.gitmodules”文件中删
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>git submodule update –init –recursive
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>git submodule update --init --recursive
 </code></pre></td></tr></table>
 </div>
 </div><p>即可将子模块内容下载下来后工程才不会缺少相应的文件。<br>
 ————————————————<br>
 版权声明：本文为CSDN博主「糖果屋的世界」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>
 原文链接：https://blog.csdn.net/ajdfhajdkfakr/article/details/77892137</p>
+<p>I came to this SO post trying to add a submodule with the same path as a submodule that I recently deleted.</p>
+<p>This is what ultimately worked for me (<a href=http://blogs.atlassian.com/2013/03/git-submodules-workflows-tips/>this article helped out a lot</a>):</p>
+<p>If you haven&rsquo;t already run</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>git rm --cached path_to_submodule<span class=sb>`</span> <span class=o>(</span>no trailing slash<span class=o>)</span> as well as
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>rm -rf path_to_submodule<span class=sb>`</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Then:</p>
+<ol>
+<li>Delete the relevant lines from the <code>.gitmodules</code> file. e.g. delete these:</li>
+</ol>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=o>[</span>submodule <span class=s2>&#34;path_to_submodule&#34;</span><span class=o>]</span>
+        <span class=nv>path</span> <span class=o>=</span> path_to_submodule
+        <span class=nv>url</span> <span class=o>=</span> https://github.com/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>Delete the relevant section from .git/config. e.g. delete these:</li>
+</ol>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=o>[</span>submodule <span class=s2>&#34;path_to_submodule&#34;</span><span class=o>]</span>
+        <span class=nv>url</span> <span class=o>=</span> https://github.com/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div><ol>
+<li><code>rm -rf .git/modules/path_to_submodule</code></li>
+</ol>
+<p>Then, you can finally:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>git submodule add https://github.com/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div>
 </article>
 <script defer src=/js/clipboard.min.1626706afc88d95ebe1173b553ec732c6dc82a576989315fdf5e7779af738a44.js></script>
 <script defer src=/js/helper/prev.min.js></script>
