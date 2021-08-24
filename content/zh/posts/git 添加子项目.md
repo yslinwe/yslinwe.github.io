@@ -42,9 +42,49 @@ submodule的删除稍微麻烦点：首先，要在“.gitmodules”文件中删
 
 当使用git clone下来的工程中带有submodule时，初始的时候，submodule的内容并不会自动下载下来的，此时，只需执行如下命令：
 ```shell
-git submodule update –init –recursive
+git submodule update --init --recursive
 ```
 即可将子模块内容下载下来后工程才不会缺少相应的文件。
 ————————————————
 版权声明：本文为CSDN博主「糖果屋的世界」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/ajdfhajdkfakr/article/details/77892137
+
+I came to this SO post trying to add a submodule with the same path as a submodule that I recently deleted.
+
+This is what ultimately worked for me ([this article helped out a lot](http://blogs.atlassian.com/2013/03/git-submodules-workflows-tips/)):
+
+If you haven't already run
+
+```shell
+git rm --cached path_to_submodule` (no trailing slash) as well as
+```
+
+```shell
+rm -rf path_to_submodule`
+```
+
+Then:
+
+1. Delete the relevant lines from the `.gitmodules` file. e.g. delete these:
+
+```shell
+[submodule "path_to_submodule"]
+        path = path_to_submodule
+        url = https://github.com/path_to_submodule
+```
+
+1. Delete the relevant section from .git/config. e.g. delete these:
+
+```shell
+[submodule "path_to_submodule"]
+        url = https://github.com/path_to_submodule
+```
+
+1. `rm -rf .git/modules/path_to_submodule`
+
+Then, you can finally:
+
+```shell
+git submodule add https://github.com/path_to_submodule
+```
+
