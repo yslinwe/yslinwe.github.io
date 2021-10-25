@@ -7,7 +7,7 @@ author: "YSL"
 draft: false
 weight: 2
 ---
-#### sql server 设置账户密码登录
+#### sql server 设置数据库引擎 SQL Server 身份验证
 
 ```shell
 打开Microsoft SQL Server Management Studio -> 视图 -> 已注册的服务器
