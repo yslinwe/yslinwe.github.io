@@ -41,9 +41,10 @@ https://dashboard.heroku.com/new?template=https://github.com/**bclswl0827/v2ray-
 
 其中**应用名称**是在Heroku中的App name
 
-，右边是host **（host 填写节点时候要用，记得保存）**
+右边是host **（host 填写节点时候要用，记得保存）**
 
-打开host+/web 出现 **Bad Request**表示成功
+> 打开host+/web 出现 **Bad Request**表示成功
+>
 
 ```javascript
 addEventListener(
