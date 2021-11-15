@@ -38,11 +38,11 @@
   weight = 5
 
 [[main]]
-  identifier = "算法学习"
+  identifier = "Algorithm_learning"
   parent = "posts"
   name = "算法学习"
 
   [[main]]
-  parent = "算法学习"
+  parent = "Algorithm_learning"
   name = "剑指offer"
   url = "posts/剑指offer目录"
