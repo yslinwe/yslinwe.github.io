@@ -35,11 +35,13 @@
 [[main]]
   identifier = "posts"
   name = "技术分享"
+  url = "posts"
   weight = 5
 
 [[main]]
   identifier = "Algorithm_learning"
   parent = "posts"
+  url = "posts"
   name = "算法学习"
 
   [[main]]
