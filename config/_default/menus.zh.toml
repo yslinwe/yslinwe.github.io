@@ -24,8 +24,8 @@
     
 [[main]]
   parent = "gallery"
-  name = "卡通"
-  url = "gallery/cartoon"
+  name = "视频"
+  url = "gallery/video"
 
 [[main]]
   parent = "gallery"
