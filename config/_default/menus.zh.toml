@@ -43,6 +43,7 @@
   parent = "posts"
   url = "posts"
   name = "算法学习"
+  weight = 6
 
   [[main]]
   parent = "Algorithm_learning"
