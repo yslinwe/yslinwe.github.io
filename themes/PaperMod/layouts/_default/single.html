@@ -110,3 +110,20 @@
 </script>
 {{ partial "script/single-script" . }}
 {{ end }}
+{{ if (.Params.gitment) }}
+<div id="git-comments"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: '{{ .Slug }}',  // 可选, 默认为 location.href
+    owner: 'popoYSL',
+    repo: 'https://github.com/popoYSL/git-commits',
+    oauth: {
+      client_id: 'e1d61566fcef3be23349',
+      client_secret: '8040097e71904cfc2a44e740939e74faf13f0882',
+    }
+  })
+  gitment.render('git-comments')
+</script>
+{{ end }}
