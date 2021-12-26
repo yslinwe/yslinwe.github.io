@@ -33,7 +33,7 @@
 [[main]]
   parent = "gallery"
   name = "图片"
-  url = "gallery/photo"
+  url = "https://www.pexels.com/zh-cn/search/%E6%99%AF%E8%A7%80/?orientation=landscape"
 [[main]]
   identifier = "archive"
   name = "历史墙"
