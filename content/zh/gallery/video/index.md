@@ -5,6 +5,5 @@ type: "gallery"
 mode: "at-once" # at-once is a default value
 description: "cartoon gallery"
 image: images/feature2/bam.png
-url: https://yslinwe.tk/
 ---
 
