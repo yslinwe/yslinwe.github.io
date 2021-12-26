@@ -3,7 +3,7 @@ logoType = "short" # long, short
 description = "好好学习，天天向上。"
 custom_css = []
 custom_js = []
-useFaviconGenerator = true # https://www.favicon-generator.org/
+useFaviconGenerator = false # https://www.favicon-generator.org/
 meta_image = ""
 themecolor = ""
 
