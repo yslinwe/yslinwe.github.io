@@ -9,18 +9,10 @@
   name = "剑指offer"
   url = "posts/剑指offer目录"
 
-
 [[main]]
-  identifier = "archive"
-  name = "历史"
-  url = "archive"
-  weight = 2
-
-[[main]]
-  identifier = "presentation"
+  parent = "Algorithm_learning"
   name = "PPT"
   url = "presentation"
-  weight = 3
 
 [[main]]
   identifier = "gallery"
@@ -31,9 +23,20 @@
 [[main]]
   parent = "gallery"
   name = "视频"
-  url = "gallery/video"
+  url = "https://yslinwe.tk/"
+
+[[main]]
+  parent = "gallery"
+  name = "音乐"
+  url = "https://popo-music.vercel.app/"
 
 [[main]]
   parent = "gallery"
   name = "图片"
   url = "gallery/photo"
+[[main]]
+  identifier = "archive"
+  name = "历史墙"
+  url = "archive"
+  weight = 5
+
