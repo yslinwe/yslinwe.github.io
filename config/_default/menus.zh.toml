@@ -1,37 +1,37 @@
 [[main]]
-  identifier = "Algorithm_learning"
+  identifier = "算法学习"
   url = "learn"
   name = "算法学习"
   weight = 1
 
 [[main]]
-  parent = "Algorithm_learning"
+  parent = "算法学习"
   name = "剑指offer"
   url = "posts/剑指offer目录"
 
 [[main]]
-  parent = "Algorithm_learning"
-  name = "PPT"
+  parent = "算法学习"
+  name = "PPT模板"
   url = "presentation"
 
 [[main]]
-  identifier = "gallery"
+  identifier = "吃喝玩乐"
   name = "吃喝玩乐"
   url = "gallery"
   weight = 4
     
 [[main]]
-  parent = "gallery"
+  parent = "吃喝玩乐"
   name = "视频"
   url = "https://yslinwe.tk/"
 
 [[main]]
-  parent = "gallery"
+  parent = "吃喝玩乐"
   name = "音乐"
   url = "https://popo-music.vercel.app/"
 
 [[main]]
-  parent = "gallery"
+  parent = "吃喝玩乐"
   name = "图片"
   url = "https://www.pexels.com/zh-cn/search/%E6%99%AF%E8%A7%80/?orientation=landscape"
 [[main]]
