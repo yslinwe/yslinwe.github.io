@@ -20,7 +20,7 @@ weight: 2
 - 身份验证 设置 **SQL Server 身份验证** 
 - 设置 登录名和密码
 
-![image-20211025120849634](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211025120849634.png)
+![image-20211025120849634](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211025120849634.png)
 
 #### 对象资源管理器 设置
 
@@ -28,15 +28,15 @@ weight: 2
 右键属性->安全性->设置 SQL Server 和 Windows 身份验证模式 和 失败和成功的登录
 ```
 
-![image-20211025121154573](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211025121154573.png)
+![image-20211025121154573](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211025121154573.png)
 
 #### 重启服务
 
 右键属性->重新启动 
 
-![image-20211025122430875](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211025122430875.png)
+![image-20211025122430875](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211025122430875.png)
 
 #### 选择账户密码登录
 
-![image-20211025122814413](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211025122814413.png)
+![image-20211025122814413](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211025122814413.png)
 

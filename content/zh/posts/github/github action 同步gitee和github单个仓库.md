@@ -97,7 +97,7 @@ jobs:
 
     显示如下图则成功
 
-    ![image-20210430222406658](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20210430222406658.png)
+    ![image-20210430222406658](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20210430222406658.png)
 
 * 绑定`Github`
 
@@ -113,7 +113,7 @@ jobs:
 
     显示如下图则成功
 
-    ![image-20210430222851660](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20210430222851660.png)
+    ![image-20210430222851660](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20210430222851660.png)
 
 * 配置
 

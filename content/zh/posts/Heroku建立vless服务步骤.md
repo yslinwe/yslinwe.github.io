@@ -23,10 +23,10 @@ https://dashboard.heroku.com/new?template=https://github.com/bclswl0827/v2ray-he
 5. 回到专案首页，点击上面的链接以部署 V2Ray
 
 5. 利用[长风网站的UUID生成工具](https://v2rayse.com/v2ray-tools)，更新后复制（**UUID 填写节点时候要用，记得保存**）
-![image-20211027211543908](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211027211543908.png)
+![image-20211027211543908](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211027211543908.png)
 6. 如下图填写，然后deploy app（**App name 在cloudflare 反向代理中要用，记得保存**）
 
-<img src="https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211027153322461.png" alt="image-20211027153322461"  />
+<img src="https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211027153322461.png" alt="image-20211027153322461"  />
 
 
 
@@ -64,7 +64,7 @@ addEventListener(
 )
 ```
 
-![image-20211027154253078](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211027154253078.png)
+![image-20211027154253078](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211027154253078.png)
 
 
 
@@ -86,4 +86,4 @@ addEventListener(
 
    伪装域名用 cloudflare中的混淆host不要**https://** ，以dev结尾的。
 
-   ![image-20211027155424187](https://gitee.com/yslinxx/image-bed/raw/master/images/image-20211027155424187.png)
+   ![image-20211027155424187](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/image-20211027155424187.png)

@@ -18,5 +18,5 @@ weight: 3
 
 以上方法来自：https://zhuanlan.zhihu.com/p/111014448
 
-![未命名](https://gitee.com/yslinxx/image-bed/raw/master/images/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
+![未命名](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
 

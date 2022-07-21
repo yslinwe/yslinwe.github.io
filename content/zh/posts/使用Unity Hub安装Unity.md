@@ -12,7 +12,7 @@ weight: 2
 
 [**Unity Hub快速安装链接**](https://unity3d.com/get-unity/download/archive)
 
-![截屏2021-08-16 上午9.45.24](https://gitee.com/yslinxx/image-bed/raw/master/images/%E6%88%AA%E5%B1%8F2021-08-16%20%E4%B8%8A%E5%8D%889.45.24.png)
+![截屏2021-08-16 上午9.45.24](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/%E6%88%AA%E5%B1%8F2021-08-16%20%E4%B8%8A%E5%8D%889.45.24.png)
 
 或者直接从下面链接下载
 

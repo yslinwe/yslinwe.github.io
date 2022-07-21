@@ -16,7 +16,7 @@ public/private/protected的具体区别
 2、private：private表示私有，私有的意思就是除了class自己之外，任何人都不可以直接使用，私有财产神圣不可侵犯嘛，即便是子女，朋友，都不可以使用。
 3、protected：protected对于子女、朋友来说，就是public的，可以自由使用，没有任何限制，而对于其他的外部class，protected就变成private。
 
-![20161223101955854](https://gitee.com/yslinxx/image-bed/raw/master/images/20161223101955854.jpg)
+![20161223101955854](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/20161223101955854.jpg)
 
 第二部分：
 
@@ -25,7 +25,7 @@ public/private/protected的具体区别
 
 我们可以根据访问权限总结出不同的访问类型，如下所示：
 
-![20161223101949482](https://gitee.com/yslinxx/image-bed/raw/master/images/20161223101949482.jpg)
+![20161223101949482](https://cdn.jsdelivr.net/gh/yslinwe/image_bed@main/img/20161223101949482.jpg)
 
 一个派生类继承了所有基类的方法，但下列情况除外：
 *基类的构造函数、析构函数和拷贝构造函数（可能是为了多继承定义不出现冲突）
