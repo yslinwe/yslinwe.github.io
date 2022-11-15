@@ -1,7 +1,7 @@
 ---
 title: "Aria2 VPS下载器"
 summary: Aria2 VPS下载器
-date: 2021-111-12
+date: 2021-11-12
 tags: ["aria2"]
 author: "YSL"
 draft: false
