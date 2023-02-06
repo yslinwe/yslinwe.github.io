@@ -7,6 +7,7 @@ hideToc: false
 enableToc: true
 enableTocContent: false
 author: YSL
+type: notshow
 authorEmoji: 🎅
 pinned: true
 tags:
