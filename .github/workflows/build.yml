@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build github
-        run: hugo --theme=PaperMod --baseUrl="https://yslinwe.github.io" --buildDrafts --minify	# 使用hugo构建静态网页
+        run: hugo --theme=PaperMod --baseURL="https://yslinwe.github.io" --buildDrafts --minify	# 使用hugo构建静态网页
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
