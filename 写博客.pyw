@@ -30,7 +30,7 @@ import time
 import platform
 import subprocess
 
-日记根目录 = 'C:\\Users\\PC4\Documents\\GitHub\\yslinwe.github.io\\content\\zh\\posts'
+日记根目录 = 'C:\\Users\\popo\\Documents\\github\\yslinwe.github.io\\content\\zh\\posts'
 
 
 def clearFileDir(path):
