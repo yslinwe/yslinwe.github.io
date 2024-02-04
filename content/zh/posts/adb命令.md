@@ -8,6 +8,7 @@ draft: false
 weight: 2
 ---
 ### adb命令是：
+adb shell dumpsys meminfo
 1、查看将要启动或退出app的包名
 
 ```
