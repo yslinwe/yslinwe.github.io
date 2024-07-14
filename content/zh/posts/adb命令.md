@@ -8,6 +8,10 @@ draft: false
 weight: 2
 ---
 ### adb命令是：
+1、输出错误日志
+```
+adb logcat -v time *:E > D:\Documents\log.txt
+```
 1、查看将要启动或退出app的包名
 
 ```
